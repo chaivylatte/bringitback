@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+call6 {
+  position: relative;
+  display: flex;
+  place-content: center center;
+  align-items: stretch;
+  width: 100%;
+  min-width: 500px;
+  min-height: 400px;
+  padding: 50px;
+  border-radius: 10px;
+  margin: auto;
+  font: 600 14px nunito;
+}
+call6 inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  padding: 25px;
+  background: rgba(var(--bgelev1), .9);
+  border: 1px solid rgba(var(--bgelev1));
+  border-radius: inherit;
+  box-shadow: 0 0 4px 0 rgba(var(--shadow), .25);
+}
+call6 topper {
+  order: 1;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  font: 400 22px carter one;
+  line-height: 100%;
+}
+call6 topper span:before {
+  display: inline-block;
+  content: "call connected";
+  border-bottom: 4px solid rgba(var(--bgelev3));
+}
+call6 topper i {
+  font-size: 15px;
+  line-height: 100%;
+  --fa-primary-color: var(--fontaccent1);
+  --fa-primary-opacity: 1;
+  --fa-secondary-color: rgba(var(--font));
+  --fa-secondary-opacity: 1;
+}
+call6 recipient {
+  align-self: flex-end;
+  margin-top: 15px;
+  order: 2;
+  background: rgba(var(--bgpure));
+  padding: 15px;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  box-shadow: 0 0 2px 0 rgba(var(--shadow), .25);
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 100%;
+  font-weight: 900;
+  text-decoration: underline rgba(var(--bgelev3)) 2px;
+  color: var(--fontaccent1);
+}
+call6 themiddle {
+  order: 3;
+  width: 100%;
+  padding: 25px;
+  display: grid;
+  grid-template-columns: fit-content(25%) 1fr;
+  grid-gap: 25px;
+}
+.postwr:nth-child(odd) call6 themiddle {
+  grid-template-columns: fit-content(25%) 1fr;
+}
+.postwr:nth-child(even) call6 themiddle {
+  grid-template-columns: 1fr fit-content(25%);
+}
+call6 themiddle gif {
+  order: 1;
+  position: relative;
+  align-self: start;
+  justify-self: end;
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-width: 70px;
+  min-height: 70px;
+  max-width: 120px;
+  max-height: 120px;
+  aspect-ratio: 1 / 1;
+  border-radius: 10px;
+  background: rgba(var(--bgpure));
+  padding: 7px;
+  box-shadow: 0 0 2px 0 rgba(var(--shadow), .25);
+}
+call6 themiddle gif.nogif {
+  width: 70px;
+  height: 70px;
+}
+call6 themiddle gif i {
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  display: flex!important;
+  place-content: center center;
+  align-items: center;
+  color: var(--fontaccent1);
+}
+call6 themiddle gif.circle {
+  border-radius: 50%;
+}
+call6 themiddle gif:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -8px;
+  left: -8px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  opacity: .65;
+  box-shadow: 0 0 2px 0 rgba(var(--shadow), .25);
+}
+.postwr:nth-child(odd) call6 themiddle gif:before {
+  left: -8px;
+}
+.postwr:nth-child(even) call6 themiddle gif:before {
+  right: -8px;
+}
+call6 themiddle gif img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: inherit;
+}
+call6 .actions {
+  order: 2;
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: justify;
+  padding: 15px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: 10px;
+  border-top-left-radius: 0;
+  box-shadow: 0 0 2px 0 rgba(var(--shadow), .25);
+}
+call6 .actions img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+call6 .actions p {
+  margin: 0;
+  margin-top: 15px;
+}
+call6 .actions p:first-child {
+  margin-top: 0;
+}
+call6 .actions b, call6 .actions i, call6 .actions u, call6 .actions a {
+  font: 400 15px carter one;
+  letter-spacing: 0.25px;
+  -webkit-text-stroke: 0.4px rgba(var(--shadow));
+}
+call6 .actions b {
+  color: var(--fontaccent1);
+}
+call6 .actions i {
+  color: var(--fontaccent4);
+}
+call6 .actions u {
+  text-decoration: underline var(--fontaccent2);
+}
+call6 .actions a {
+  color: var(--fontaccent3);
+  text-decoration: underline rgba(var(--bgpure));
+}
+call6 bottbar {
+  order: 4;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgba(var(--bgpure));
+  box-shadow: 0 0 2px 0 rgba(var(--shadow), .15);
+}
+call6 bottbar span:before {
+  content: "end connected call";
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 100%;
+}
+call6 bottbar i {
+  color: var(--fontaccent1);
+  font-size: 15px;
+  line-height: 100%;
+}
+.postwr:nth-child(odd) call6 themiddle gif, .postwr:nth-child(even) call6 themiddle .actions {
+  order: 1;
+}
+.postwr:nth-child(even) call6 themiddle gif, .postwr:nth-child(odd) call6 themiddle .actions {
+  order: 2;
+}
+.postwr:nth-child(odd) call6 .actions, .postwr:nth-child(even) call6 recipient {
+  border-top-left-radius: 0;
+  border-top-right-radius: 10px;
+  align-self: flex-start;
+}
+.postwr:nth-child(even) call6 .actions, .postwr:nth-child(odd) call6 recipient {
+  border-top-right-radius: 0;
+  border-top-left-radius: 10px;
+  align-self: flex-end;
+}
+call6 blob {
+  position: absolute;
+  display: block;
+  border-radius: 33% 67% 49% 51% / 44% 46% 54% 56% ;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+call6 blobholder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  background: rgba(var(--bgelev1));
+  border: 1px solid rgba(var(--bgelev1));
+  box-shadow: 0 0 4px 0 rgba(var(--shadow), .25);
+}
+call6 blob:nth-of-type(1) {
+  top: -140px;
+  left: -60px;
+  width: 230px;
+  height: 330px;
+  background-image: linear-gradient(to top right, var(--pastelgradient1));
+}
+call6 blob:nth-of-type(2) {
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(to top left, var(--pastelgradient1));
+}
+call6 blob:nth-of-type(3) {
+  bottom: -100px;
+  left: -80px;
+  width: 280px;
+  height: 280px;
+  background-image: linear-gradient(to bottom left, var(--pastelgradient1));
+}
+call6 blob:nth-of-type(4) {
+  bottom: -25px;
+  right: -120px;
+  width: 280px;
+  height: 300px;
+  background-image: linear-gradient(to bottom right, var(--pastelgradient1));
+}

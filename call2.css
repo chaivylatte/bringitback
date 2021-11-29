@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+call2 {
+  display: block;
+  min-width: 400px;
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  margin: 0 auto;
+  font-family: nunito;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  background: rgba(var(--bgelev3));
+  display: grid;
+  grid-gap: 25px;
+  grid-template-columns: auto 1fr;
+}
+.postwr:nth-child(odd) call2 {
+  grid-template-columns: auto 1fr;
+}
+.postwr:nth-child(even) call2 {
+  grid-template-columns: 1fr auto;
+}
+call2.small {
+  width: 450px;
+}
+call2 gif {
+  position: sticky;
+  top: 25px;
+  order: 1;
+  display: flex;
+  place-content: center center; align-items: center;
+  width: 90px;
+  height: 90px;
+  background: rgba(var(--bgelev1)) linear-gradient(to top, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  padding: 8px;
+  border-radius: 10px;
+  border: 3px solid rgba(var(--bgelev1));
+}
+call2 gif.circle {
+  border-radius: 50%;
+}
+call2 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(var(--bgelev1));
+  border-radius: inherit;
+}
+call2 gif.nogif img, call2 gif img + i {
+  display: none!important;
+}
+call2 gif.nogif i {
+  display: flex!important;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--fontaccent2);
+}
+call2 .actions {
+  order: 2;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start; align-items: flex-start;
+}
+call2 .actionsin {
+  margin: 0;
+  width: 100%;
+  background: rgba(var(--bgelev1)) linear-gradient(to bottom left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+.postwr:nth-child(odd) call2 gif, .postwr:nth-child(even) call2 .actions {
+  order: 1;
+}
+.postwr:nth-child(even) call2 gif, .postwr:nth-child(odd) call2 .actions {
+  order: 2;
+}
+.postwr:nth-child(odd) call2 .actions {
+  place-content: center flex-start; align-items: flex-start;
+}
+.postwr:nth-child(even) call2 .actions {
+  place-content: center flex-start; align-items: flex-end;
+}
+call2 .actions b, call2 .actions i, call2 .actions u {
+  font-size: 15px;
+  line-height: 100%;
+}
+call2 .actions b, call2 .actions i, call2 .actions p a {
+  background: rgba(var(--bgelev1));
+  padding: 2px 5px;
+  border-radius: 3px;
+  -webkit-box-decoration-break: clone;
+}
+call2 .actions b {
+  color: var(--fontaccent2);
+}
+call2 .actions i {
+  color: var(--fontaccent4);
+}
+call2 .actions u {
+  font-family: carter one;
+  font-weight: 400;
+  text-decoration: underline var(--fontaccent1);
+}
+call2 .actions a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}
+call2 recipient {
+  display: inline-block;
+  margin-bottom: 25px;
+  font-family: carter one;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  text-transform: lowercase;
+  align-self: flex-end;
+  text-align: right;
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); -webkit-box-decoration-break: clone;
+  border-bottom: 8px solid rgba(var(--bgelev1));
+}
+.postwr:nth-child(odd) call2 recipient {
+  align-self: flex-end;
+}
+.postwr:nth-child(even) call2 recipient {
+  align-self: flex-start;
+}
+call2 .actions p {
+  margin: 0;
+  margin-top: 15px;
+}
+call2 .actions p:first-child {
+  margin-top: 0;
+}

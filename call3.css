@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+call3 {
+  display: block;
+  width: 370px;
+  margin: auto;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 10px;
+  font: 600 14px nunito;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+call3in {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  border-radius: inherit;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+call3 topper {
+  order: 1;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  place-content: center center;
+  align-items: center;
+}
+call3 gif {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  background: rgba(var(--bgelev1));
+  padding: 5px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+call3 gif.circle {
+  border-radius: 50%;
+}
+call3 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+call3 tbuttons {
+  flex-grow: 1;
+  display: flex;
+  gap: 10px;
+  place-content: center space-evenly;
+  align-items: center;
+}
+.postwr:nth-child(odd) call3 gif, .postwr:nth-child(even) tbuttons {
+  order: 1;
+}
+.postwr:nth-child(even) call3 gif, .postwr:nth-child(odd) tbuttons {
+  order: 2;
+}
+call3 tbuttons i {
+  display: block;
+  width: 35px;
+  height: 35px;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--fontaccent1);
+  background: rgba(var(--bgelev1));
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+}
+call3 recipient {
+  order: 2;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  padding: 10px;
+}
+call3 recipient span {
+  order: 2;
+  color: var(--fontaccent4);
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 100%;
+  border-bottom: 4px solid rgba(var(--bgelev3));
+}
+call3 recipient i {
+  color: var(--fontaccent2);
+  font-size: 15px;
+}
+call3 recipient i:nth-of-type(1) {
+  order: 1;
+}
+call3 recipient i:nth-of-type(2) {
+  order: 3;
+}
+call3 bbar {
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  order: 4;
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  padding: 10px;
+}
+call3 bbar > i {
+  font-size: 15px;
+  line-height: 100%;
+  color: var(--fontaccent4);
+}
+call3 bbar span {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 100%;
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+}
+call3 bbar span:before {
+  content: "end current call";
+}
+call3 bbar span i {
+  background: var(--fontaccent1);
+  width: 18px;
+  height: 18px;
+  padding: 5px;
+  border-radius: 50%;
+  font-size: 8px;
+  line-height: 100%;
+  text-align: center;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  color: rgba(var(--bgelev1));
+}
+call3 .actions {
+  order: 3;
+  margin: 25px 0;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: flex-start;
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+  background: rgba(var(--bgelev1), 1);
+  padding: 15px;
+  border-radius: 10px;
+}
+call3 .actions b, call3 .actions i, call3 .actions u {
+  font-size: 15px;
+}
+call3 .actions b {
+  font-weight: 800;
+  color: var(--fontaccent2);
+}
+call3 .actions i {
+  color: var(--fontaccent4);
+}
+call3 .actions u {
+  font: 400 15px carter one;
+  text-decoration: underline var(--fontaccent1);
+}
+call3 .actions a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}
+.postwr:nth-child(odd) call3 .actions {
+  align-items: flex-start;
+}
+.postwr:nth-child(even) call3 .actions {
+  align-items: flex-end;
+}
+call3 .actions p {
+  margin: 0;
+  margin-top: 10px;
+}
+call3 .actions p:first-child {
+  margin-top: 0;
+}
+call3 .actions img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
