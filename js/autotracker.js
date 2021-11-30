@@ -45,7 +45,7 @@ async function FillParticipatedTracker(username) {
     $(Open_Thread_Wrapper).append(thistracker);
     $(Closed_Thread_Wrapper).append(thishistory);
 
-    let href = `/index.php?act=Search&q=&f=&u=${username.replace("&#160;", "%20").replace("&#39;", "%27")}&rt=topics`;
+    let href = `/index.php?act=Search&q=&f=&u=${username.replace("&nbsp;", "%20").replace("&#39;", "%27")}&rt=topics`;
     let data = '';
     try {
         console.log(`fetching ${href}`);
@@ -57,7 +57,7 @@ async function FillParticipatedTracker(username) {
         return;
     }
     let doc = new DOMParser().parseFromString(data, 'text/html');
-    
+
     let meta = $('meta[http-equiv="refresh"]', doc);
     if (meta.length) {
       href = meta.attr('content').substr(meta.attr('content').indexOf('=') + 1);
@@ -72,7 +72,7 @@ async function FillParticipatedTracker(username) {
       }
 
       doc = new DOMParser().parseFromString(data, 'text/html');
-    } else {       
+    } else {
        let boardmessage = $('#board-message .tablefill .postcolor', doc).text();
           thistracker.append(`<div class="modalautoitem">${boardmessage}</div>`);
 
@@ -90,7 +90,7 @@ async function FillParticipatedTracker(username) {
                 const title = $(cells[2]).find('td:nth-child(2) > a').text();
                 const threadDesc = $(cells[2]).find('.desc').text();
                 const location = $(cells[3]).text();
-              
+
                 const href = $(cells[7]).children('a').attr('href');
                 const threadID = href.match(/showtopic=([^&]+)&?/)[1];
                 const fhref = $(cells[3]).children('a').attr('href');
