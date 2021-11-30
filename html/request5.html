@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/request5.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mg-toggle"><form class="forminput" action="#"><select id="mgcolor"><option value="------------" selected="selected">change membergroup</option><option value="group-1">validating</option><option value="group-2">guests</option><option value="group-3">members</option><option value="group-4">staff</option><option value="group-6">inactive</option><option value="pompompurin">pompompurin</option><option value="badtzmaru">badtzmaru</option><option value="kerropi">kerropi</option><option value="cinnamoroll">cinnamoroll</option><option value="aggretsuko">aggretsuko</option><option value="kuromi">kuromi</option><option value="mymelody">mymelody</option><option value="gudetama">gudetama</option><option value="hummingmint">hummingmint</option><option value="ichigoman">ichigoman</option><option value="wishmewell">wishmewell</option></select></form></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<request5><gif>
+
+<img src="https://i.pinimg.com/236x/46/57/72/465772ab2512683d1b803285981efe88.jpg">
+
+</gif><div class="writing">
+
+<p>cat ipsum dolor sit amet, poop in a <b>handbag</b> look <i>delicious</i> and <u>drink</u> the <a href="#">soapy</a> mopping up water then puke giant foamy fur-balls. scratch the box roll over and sun my belly yet climb leg, so purr for meow, for dismember a mouse and then regurgitate parts of it on the family room floor.
+<p>put toy mouse in food bowl run out of litter box at full speed attack curtains for meow and lick butt. dont wait for the storm to pass, dance in the rain sleep on keyboard catching very fast laser pointer weigh eight pounds but take up a full-size bed yet scratch leg; meow for can opener to feed me.
+
+</div>
+
+<blockquote>
+<lilchar class="inactive"><name>@[firstname lastname]</name><infoblock><span>thing</span><span>thing</span><span>thing</span></infoblock></lilchar>
+<lilchar class="pompompurin"><name>@[firstname lastname]</name><infoblock><span>thing</span><span>thing</span><span>thing</span></infoblock></lilchar>
+<lilchar class="badtzmaru"><name>@[firstname lastname]</name><infoblock><span>thing</span><span>thing</span><span>thing</span></infoblock></lilchar>
+<lilchar class="hummingmint"><name>@[firstname lastname]</name><infoblock><span>thing</span><span>thing</span><span>thing</span></infoblock></lilchar>
+<lilchar class="wishmewell"><name>@[firstname lastname]</name><infoblock><span>thing</span><span>thing</span><span>thing</span></infoblock></lilchar>
+</blockquote>
+
+<charspace>
+
+</ BEGIN CHARACTER >
+<char class="inactive"><gif>
+	<img src="https://via.placeholder.com/120">
+</gif><infoblock><name>
+	@[firstname lastname]
+</name><div class="writing"><overflow>
+	<p>idk some stuff about the character? delete these words and the p tag if you don't want it! here is some <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a>link</a>
+</overflow></div></infoblock><overview>
+		<span>thing</span><span>thing</span><span>thing</span>
+</overview></char>
+</ END CHARACTER >
+
+</ BEGIN CHARACTER >
+<char class="aggretsuko"><gif>
+	<img src="https://64.media.tumblr.com/ce3c8d22da2e4b77e8ea294ed3e9d330/6ca059afb4674793-07/s400x600/bee8b32068c478dbcbbae723d8a1131f95cbceb9.gif">
+</gif><infoblock><name>
+	@[firstname lastname]
+</name><div class="writing"><overflow>
+	<p>idk some stuff about the character? delete these words and the p tag if you don't want it! here is some <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a>link</a>
+</overflow></div></infoblock><overview>
+		<span>thing</span><span>thing</span><span>thing</span>
+</overview></char>
+</ END CHARACTER >
+
+</ BEGIN CHARACTER >
+<char class="ichigoman"><gif>
+	<img src="https://64.media.tumblr.com/2b44eefc28c0cf004023083d02aed946/b09f14b8c1f316b1-b6/s400x600/ffb598278ea387687d73a7b2b711e898a63b3b23.gif">
+</gif><infoblock><name>
+	@[firstname lastname]
+</name><div class="writing"><overflow>
+	<p>idk some stuff about the character? delete these words and the p tag if you don't want it! here is some <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a>link</a>
+</overflow></div></infoblock><overview>
+		<span>thing</span><span>thing</span><span>thing</span>
+</overview></char>
+</ END CHARACTER >
+
+</charspace></request5>
+
+
+</div></div></body>
+<script src="https://dl.dropbox.com/s/iqqx9y7oqiqln85/daynight.js"></script>
+<script>
+document.getElementById('mgcolor').onchange = function(){
+    document.getElementById('mgchanger').className = this.value;
+};
+</script>
+</html>

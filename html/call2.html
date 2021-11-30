@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/call2.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mg-toggle"><form class="forminput" action="#"><select id="mgcolor"><option value="------------" selected="selected">change membergroup</option><option value="group-1">validating</option><option value="group-2">guests</option><option value="group-3">members</option><option value="group-4">staff</option><option value="group-6">inactive</option><option value="group-7">standard group 1</option><option value="group-8">standard group 2</option><option value="group-9">standard group 3</option><option value="group-10">standard group 4</option><option value="group-11">standard group 5</option><option value="group-12">standard group 6</option><option value="group-13">standard group 7</option><option value="group-14">premium group 1</option><option value="group-15">premium group 2</option><option value="group-16">premium group 3</option></select></form></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<call2 class="small"><gif class="circle">
+
+<img src="https://64.media.tumblr.com/da527a5867932f7d63a377b0e0eb7fdb/0adb5cc8762fa79c-00/s540x810/44e1de024eea9b95a64357c51de90d512c778a3f.gif">
+<i class="fa-duotone fa-phone"></i>
+
+</gif><div class="actions"><recipient>recipient name here</recipient><div class="actionsin">
+
+<p>this is what a message looks like
+<p>this is a longer message with <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a href="#">link</a>
+
+</div></div></call2><link href="https://dl.dropbox.com/s/ CSS LINK GOES HERE .css" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</div></div></body>
+<script src="https://dl.dropbox.com/s/iqqx9y7oqiqln85/daynight.js"></script>
+<script>
+document.getElementById('mgcolor').onchange = function(){
+    document.getElementById('mgchanger').className = this.value;
+};
+</script>
+</html>

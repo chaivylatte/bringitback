@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/call3.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mg-toggle"><form class="forminput" action="#"><select id="mgcolor"><option value="------------" selected="selected">change membergroup</option><option value="group-1">validating</option><option value="group-2">guests</option><option value="group-3">members</option><option value="group-4">staff</option><option value="group-6">inactive</option><option value="group-7">standard group 1</option><option value="group-8">standard group 2</option><option value="group-9">standard group 3</option><option value="group-10">standard group 4</option><option value="group-11">standard group 5</option><option value="group-12">standard group 6</option><option value="group-13">standard group 7</option><option value="group-14">premium group 1</option><option value="group-15">premium group 2</option><option value="group-16">premium group 3</option></select></form></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<call3><call3in><div class="actions">
+
+<p>this is what a message looks like
+<p>this is a longer message with <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a href="#">link</a>
+
+</div><recipient><i class="fa-duotone fa-user" title="user profile"></i><i class="fa-duotone fa-microphone-slash" title="mute call"></i><span>recipient name here</span></recipient><topper><gif class="circle">
+
+<img src="https://64.media.tumblr.com/ec09fe980cce6ac52ffa773c16601d70/867813d822e58f0c-93/s400x600/639ed68c4c87390aba0f6a31364d03038dc841ee.gif">
+
+</gif><tbuttons><i class="fa-solid fa-angle-left" title="back to call history"></i><i class="fa-duotone fa-comments" title="view all messages with user"></i><i class="fa-duotone fa-video" title="start video call"></i></tbuttons></topper><bbar><i class="fa-duotone fa-user-plus" title="add user to call"></i><i class="fa-duotone fa-stop-circle" title="block user"></i><span><i class="fa-solid fa-phone-slash" title="end call"></i></span></bbar></call3in></call3>
+
+
+</div></div></body>
+<script src="https://dl.dropbox.com/s/iqqx9y7oqiqln85/daynight.js"></script>
+<script>
+document.getElementById('mgcolor').onchange = function(){
+    document.getElementById('mgchanger').className = this.value;
+};
+</script>
+</html>

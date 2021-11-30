@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/text5.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mg-toggle"><form class="forminput" action="#"><select id="mgcolor"><option value="------------" selected="selected">change membergroup</option><option value="group-1">validating</option><option value="group-2">guests</option><option value="group-3">members</option><option value="group-4">staff</option><option value="group-6">inactive</option><option value="group-7">standard group 1</option><option value="group-8">standard group 2</option><option value="group-9">standard group 3</option><option value="group-10">standard group 4</option><option value="group-11">standard group 5</option><option value="group-12">standard group 6</option><option value="group-13">standard group 7</option><option value="group-14">premium group 1</option><option value="group-15">premium group 2</option><option value="group-16">premium group 3</option></select></form></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<text5><div class="messages">
+
+<note>message read</note>
+<note><a>name</a> added to chat</note>
+<note>feel free to delete these unneeded notes!</note>
+<p>this is what a message looks like
+<p>this is a longer message with <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a href="#">link</a>
+<p><img src="https://via.placeholder.com/600x200">
+
+</div><topper><gif class="circle">
+
+<img src="https://64.media.tumblr.com/35b07f8eb636dc5cc39451669b7f1d02/c254fcd2b835143a-d6/s400x600/ff76feaee09d6a577ad582825d6641c05c9adc21.gif">
+
+</gif><recipient><span>
+
+recipient name
+
+</span></recipient></topper><bbar><span></span><i class="fa-duotone fa-paper-plane"></i></bbar></text5>
+
+
+</div></div></body>
+<script src="https://dl.dropbox.com/s/iqqx9y7oqiqln85/daynight.js"></script>
+<script>
+document.getElementById('mgcolor').onchange = function(){
+    document.getElementById('mgchanger').className = this.value;
+};
+</script>
+</html>
