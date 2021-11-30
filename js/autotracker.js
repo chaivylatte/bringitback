@@ -45,7 +45,7 @@ async function FillParticipatedTracker(username) {
     $(Open_Thread_Wrapper).append(thistracker);
     $(Closed_Thread_Wrapper).append(thishistory);
 
-    let href = `/index.php?act=Search&q=&f=&u=${username.replace("&nbsp;", "%20").replace("&#39;", "%27")}&rt=topics`;
+    let href = `/index.php?act=Search&q=&f=&u=${username.replace("&#160;", "%20").replace("&#39;", "%27")}&rt=topics`;
     let data = '';
     try {
         console.log(`fetching ${href}`);
