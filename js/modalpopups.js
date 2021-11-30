@@ -19,6 +19,6 @@ $('.modalinn:contains([/)').each(function() {
    $(this).html($(this).html().replace(/\n/g, '<br />').replace(/\[code\](.+?)\[\/code\]/ig, '<table id="CODE-WRAP"><tr><td></td></tr><tr><td id="CODE"><style type="text/plain" style="display: block; white-space: pre-wrap">$1</style></td></tr></table>').replace(/<br\s*[\/]?>/gi, '\r\n'));
 });
 //]]>
-$.getScript("https://dl.dropbox.com/s/m4qyuc52nmqwi3d/codehighlight.js", function() {
+$.getScript("https://chaivylatte.github.io/bringitback/js/codehighlight.js", function() {
 });
 };
