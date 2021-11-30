@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+thread4 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 75px;
+  width: 400px;
+  margin: 0 auto;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: 10px;
+  font: 600 13px nunito;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+.postwr:nth-child(odd) thread4 {
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+.postwr:nth-child(even) thread4 {
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+thread4left {
+  border-radius: 10px;
+  padding: 40px;
+  background: rgba(var(--bgelev1));
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+thread4gifsur {
+  margin-bottom: 30px;
+  display: block;
+  width: 100%;
+  height: 165px;
+  padding: 15px;
+  border-radius: 10px;
+  background: hsl(var(--mghue4), calc(var(--mgsat4) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight4) + var(--darken)));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .45);
+}
+.postwr:nth-child(odd) thread4gifsur {
+  background: hsl(var(--mghue4), calc(var(--mgsat4) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight4) + var(--darken)));
+}
+.postwr:nth-child(even) thread4gifsur {
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+}
+thread4gifsur.square {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+}
+thread4gifsur.circle {
+  width: 120px;
+  height: 120px;
+  padding: 10px;
+  border-radius: 50%;
+}
+thread4 gif {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  background: rgba(var(--bgelev1));
+  border-radius: inherit;
+}
+thread4 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+thread4 .writing {
+  text-align: justify;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.25px;
+}
+thread4 .writing overflow {
+  max-height: 25em;
+}
+thread4 .writing p {
+  margin: 0;
+  margin-top: 15px;
+}
+thread4 .writing p:first-child {
+  margin-top: 0;
+}
+thread4 .writing b, thread4 .writing i, thread4 .writing u {
+  font-size: 15px;
+}
+thread4 .writing b {
+  font-weight: 800;
+  color: var(--fontaccent2);
+}
+thread4 .writing i {
+  color: var(--fontaccent4);
+}
+thread4 .writing u {
+  font-family: carter one;
+  font-weight: 400;
+  text-decoration: underline var(--fontaccent1);
+}
+thread4 .writing a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}
+thread4 line {
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+  height: 5px;
+  border-radius: 2px;
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken)));
+}
+thread4right {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  place-content: center space-between;
+  align-items: center;
+}
+thread4right > i {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 10px;
+  --fa-secondary-color: rgba(var(--font));
+  --fa-secondary-opacity: 1;
+}
+.postwr:nth-child(odd) thread4right > i {
+  --fa-primary-color: var(--fontaccent4);
+}
+.postwr:nth-child(even) thread4right > i {
+  --fa-primary-color: var(--fontaccent1);
+}
+thread4right > i.fa-swap-colors {
+  --fa-primary-color: rgba(var(--font))!important;
+}
+.postwr:nth-child(odd) thread4right > i.fa-swap-colors {
+  --fa-secondary-color: var(--fontaccent4)!important;
+}
+.postwr:nth-child(even) thread4right > i.fa-swap-colors {
+  --fa-secondary-color: var(--fontaccent1)!important;
+}
+thread4right tag {
+  display: block;
+  border-left: 5px solid rgba(var(--bgelev1));
+  writing-mode: vertical-rl;
+  font: 400 25px carter one;
+  line-height: 100%;
+  color: rgba(var(--fontdim));
+}
+thread4right tag i {
+  color: var(--fontaccent2);
+}

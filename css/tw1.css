@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+tw1 {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 10px;
+}
+tw1in {
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  padding: 15px;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+tw1topper {
+  width: 100%;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+}
+tw1head {
+  margin-left: -15px;
+  font: 400 25px carter one;
+  line-height: 100%;
+  text-align: center;
+  background: rgba(var(--bgelev1));
+  border-radius: 0 10px 10px 0;
+  padding: 15px 25px;
+}
+tw1head span {
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); -webkit-box-decoration-break: clone;
+}
+tw1topper i {
+  background: rgba(var(--bgelev1));
+  padding: 10px 15px;
+  font-size: 20px;
+  line-height: 100%;
+  border-radius: 10px;
+  color: var(--fontaccent1);
+}
+tw1headb {
+  margin-top: 15px;
+  background: rgba(var(--bgelev2));
+  padding: 8px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 0.25px;
+  font-weight: 900;
+  line-height: 100%;
+  color: var(--fontaccent4);
+}
+tw1warnings {
+  margin-top: 15px;
+  display: block;
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 11px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 150%;
+  text-align: justify;
+}

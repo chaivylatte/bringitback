@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+text4 {
+  display: block;
+  width: 380px;
+  margin: auto;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 20px;
+}
+text4in {
+  display: flex;
+  flex-direction: column;
+  place-content: center space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background: rgba(var(--bgelev3));
+  overflow: hidden;
+}
+text4 topper {
+  order: 1;
+  display: flex;
+  place-content: center space-evenly;
+  align-items: flex-start;
+  width: 100%;
+  height: 185px;
+  padding: 40px 0;
+  border-radius: 0 0 0 50px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+text4 topper i {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 50%;
+  line-height: 100%;
+  text-align: center;
+  background: rgba(var(--bgelev1));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+text4 topper i:nth-child(1) { color: var(--fontaccent3); }
+text4 topper i:nth-child(2) { color: var(--fontaccent2); }
+text4 topper i:nth-child(3) { color: var(--fontaccent1); }
+text4 middle {
+  order: 2;
+  padding: 0 40px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+}
+text4 gif {
+  position: relative;
+  margin-top: -80px;
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background: rgba(var(--bgelev1));
+  padding: 12px;
+  border-radius: 15px;
+}
+text4 gif.square, text4 gif.nogif {
+  width: 150px;
+}
+text4 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+text4 gif.nogif img {
+  display: none;
+}
+text4 gif.nogif i {
+  font-size: 50px;
+  line-height: 100%;
+  color: var(--fontaccent1);
+}
+text4 gif i.fa-envelope-dot {
+  display: block;
+  position: absolute;
+  bottom: -12px;
+  right: 25px;
+  width: 38px;
+  height: 38px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  background: rgba(var(--bgelev1));
+  border-radius: 50%;
+  color: var(--fontaccent1);
+}
+text4 recipient {
+  margin-top: 5px;
+  align-self: flex-start;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 100%;
+  border-bottom: 4px solid var(--fontaccent4);
+  color: var(--fontaccent4);
+}
+text4 bbar {
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  order: 4;
+  border-radius: 15px 15px 0 0;
+  padding: 15px;
+  width: 100%;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+text4 bbar i {
+  color: rgba(var(--bgelev1));
+}
+text4 bbar > i {
+  font-size: 25px;
+}
+text4 bbar span {
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  flex-grow: 1;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+text4 bbar span:before {
+  content: "type message here...";
+}
+text4 bbar span i {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  font-size: 10px;
+  padding: 7px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 100%;
+  background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken)));
+}
+text4 .messages {
+  order: 3;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: flex-end;
+  width: 100%;
+  padding: 35px;
+  text-align: justify;
+  font-size: 14px;
+  line0height: 150%;
+}
+text4 .messages img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+text4 .messages note {
+  align-self: center;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 130%;
+  font-weight: 900;
+}
+text4 .messages p {
+  margin: 0;
+  background: rgba(var(--bgelev1));
+  padding: 12px;
+  border-radius: 12px 0 12px 12px;
+  max-width: 92%;
+}
+text4 .messages b, text4 .messages i, text4 .messages u {
+  font-size: 15px;
+}
+text4 .messages b {
+  font-weight: 800;
+  color: var(--fontaccent2);
+}
+text4 .messages i {
+  color: var(--fontaccent4);
+}
+text4 .messages u {
+  font: 400 15px carter one;
+  text-decoration: underline var(--fontaccent1);
+}
+text4 .messages a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}

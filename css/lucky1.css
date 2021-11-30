@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+lucky1 {
+  display: block;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(var(--bgelev1));
+  width: 100%;
+  margin: auto;
+  font: 600 14px nunito;
+}
+lucky1 topper {
+  display: flex;
+  width: 100%;
+  place-content: center space-between;
+  align-items: center;
+  font: 400 25px carter one;
+  line-height: 100%;
+}
+lucky1 topper i {
+  width: 45px;
+  height: 45px;
+  line-height: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: 10px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+}
+lucky1 topper span {
+  width: auto;
+  line-height: 150%;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  background-repeat: no-repeat;
+  background-size: 100% 20%;
+  background-position: 0 70%;
+}
+lucky1 midspace {
+  display: grid;
+  grid-column-gap: 25px;
+  grid-row-gap: 10px;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto;
+  width: 600px;
+  margin: auto;
+  padding: 50px 0 35px;
+  justify-items: center;
+  align-content: center;
+}
+lucky1 midspace icon {
+  grid-row: span 2;
+  display: block;
+  width: 130px;
+  height: 130px;
+  padding: 9px;
+  border-radius: 50%;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to bottom right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+lucky1 midspace icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 5px solid rgba(var(--bgelev1));
+}
+lucky1 name {
+  align-self: end;
+  display: block;
+  text-align: center;
+  font: 400 40px carter one;
+  width: auto;
+  height: auto;
+  line-height: 100%;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  background-repeat: no-repeat;
+  background-size: 100% 30%;
+  background-position: 0 70%;
+}
+lucky1 dabars {
+  align-self: start;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  place-content: center stretch;
+  align-items: center;
+  font-size: 15px;
+  line-height: 100%;
+}
+lucky1 dabars i {
+  flex-grow: 1;
+  min-width: 35px;
+  height: 35px;
+  line-height: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to bottom right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: 10px;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+}
+lucky1 dabars i:hover {
+  color: rgba(var(--bgelev1));
+}
+lucky1 updates {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 550px;
+  padding: 30px;
+  margin: auto;
+  border-top: 1px solid rgba(var(--bgelev3));
+  border-bottom: 1px solid rgba(var(--bgelev3));
+}
+lucky1 status {
+  display: block;
+  width: 100%;
+  text-align: justify;
+  line-height: 150%;
+  letter-spacing: 0.25px;
+  background: rgba(var(--bgelev2));
+  padding: 15px;
+  border-radius: 10px;
+}
+lucky1 status:before {
+  content: "posted a status";
+}
+lucky1 status statusin {
+  display: block;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(var(--bgelev1));
+}
+lucky1 status b, lucky1 status i, lucky1 status u, lucky1 status a {
+  font-size: 16px;
+}
+lucky1 status b {
+  font-weight: 800;
+  color: var(--fontaccent1);
+}
+lucky1 status i {
+  color: var(--fontaccent4);
+}
+lucky1 status u {
+  font: 400 15px carter one;
+  text-decoration: underline var(--fontaccent3);
+}
+lucky1 status a {
+  color: var(--fontaccent2)!important;
+  text-decoration: underline!important;
+}
+lucky1 photo {
+  display: block;
+  width: 100%;
+  background: rgba(var(--bgelev2));
+  padding: 15px;
+  border-radius: 10px;
+}
+lucky1 photo photoin {
+  display: inline-block;
+  background: rgba(var(--bgelev1));
+  width: 100%;
+  margin: auto;
+  aspect-ratio: 1 / 1;
+  padding: 10px;
+  border-radius: 10px;
+}
+lucky1 photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+lucky1 photo:before {
+  content: "uploaded a photo";
+}
+lucky1 song {
+  display: block;
+  width: 100%;
+  background: rgba(var(--bgelev2));
+  padding: 15px;
+  border-radius: 10px;
+}
+lucky1 song songin {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+}
+lucky1 song songin iframe {
+  width: 100%!important;
+  max-height: 80px!important;
+  border-radius: inherit;
+}
+lucky1 song:before {
+  content: "posted a song";
+}
+lucky1 status:before, lucky1 photo:before, lucky1 song:before {
+  display: block;
+  width: auto;
+  max-width: 200px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+lucky1 photoset {
+  display: grid;
+  grid-gap: 15px;
+  align-content: center;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  align-items: stretch;
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  padding: 50px 0;
+}
+lucky1 updates:empty, lucky1 photoset:empty {
+  display: none!important;
+}
+lucky1 photoset img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .35);
+  aspect-ratio: 1 / 1;
+}
+lucky1 bottombar {
+  display: block;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: 10px;
+}
+lucky1 lucky1post {
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: auto 1fr;
+  justify-items: center;
+  align-content: center;
+  width: 600px;
+  padding: 20px;
+  margin: 40px auto;
+  border-top: 1px solid rgba(var(--bgelev3));
+  border-bottom: 1px solid rgba(var(--bgelev3));
+}
+lucky1 lucky1post icon {
+  grid-row: span 2;
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 7px;
+  border-radius: 50%;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to bottom right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+lucky1 lucky1post icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  border: 4px solid rgba(var(--bgelev1));
+}
+lucky1 lucky1post name {
+  font-size: 30px;
+}
+lucky1 posty {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  width: 100%;
+}
+lucky1 lucky1post photoin {
+  aspect-ratio: auto;
+}

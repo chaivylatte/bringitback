@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+multimod1 {
+  display: block;
+  width: 70%;
+  min-width: 400px;
+  margin: 0 auto;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+mmhead {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 15px;
+  font: 400 25px carter one;
+  line-height: 130%;
+}
+mmhead i {
+  color: var(--fontaccent1);
+  font-size: 30px;
+  line-height: 100%;
+}
+mmhead span {
+  display: inline-block;
+  border-bottom: 4px solid rgba(var(--bgelev3));
+  background-image: linear-gradient(to left, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); -webkit-box-decoration-break: clone;
+}
+mminner {
+  display: block;
+  padding: 50px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+multimod1 .writing {
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  border-radius: 10px;
+  text-align: justify;
+  font-size: 14px;
+  text-spacing: 0.25px;
+  line-height: 150%;
+}
+multimod1 .writing h1 {
+  margin: 0;
+  margin-bottom: 15px;
+  font: 400 35px carter one;
+  line-height: 150%;
+  text-align: center;
+}
+multimod1 .writing h1 span {
+  background-image: linear-gradient(to left, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); -webkit-box-decoration-break: clone;
+}
+multimod1 .writing p {
+  margin: 0;
+  margin-top: 10px;
+}
+multimod1 .writing p:first-of-type {
+  margin-top: 0;
+}
+multimod1 .writing b, multimod1 .writing i, multimod1 .writing u {
+  font-size: 16px;
+}
+multimod1 .writing b {
+  font-weight: 800;
+  color: var(--fontaccent2);
+}
+multimod1 .writing i {
+  color: var(--fontaccent4);
+}
+multimod1 .writing u {
+  font-family: carter one;
+  font-weight: 400;
+  text-decoration: underline var(--fontaccent1);
+}
+multimod1 .writing a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}
+multimod1 mmbbar {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+multimod1 mmbbar a {
+  display: block;
+  padding: 8px 12px;
+  border-radius: 8px;
+  margin: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 100%;
+  color: rgba(var(--fontdim))!important;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+multimod1 mmbbar a:hover {
+  color: rgba(var(--font))!important;
+}

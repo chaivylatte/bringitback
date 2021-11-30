@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+bringitpost1 {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  background: rgba(var(--bgelev1));
+  font: 13px 600 nunito;
+  line-height: 150%;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: justify;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+bringitpost1 a.user-tagged {
+  font: 400 17px carter one;
+  line-height: 100%;
+  text-decoration: underline rgba(var(--bgelev4));
+  text-decoration-style: wavy;
+}
+bringitpost1 b, bringitpost1 i, bringitpost1 u {
+  font-size: 15px;
+}
+bringitpost1 b {
+  font-weight: 800;
+  color: var(--fontaccent2);
+}
+bringitpost1 i {
+  color: var(--fontaccent4);
+}
+bringitpost1 u {
+  font-family: carter one;
+  font-weight: 400;
+  text-decoration: underline var(--fontaccent1);
+}
+bringitpost1 a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}

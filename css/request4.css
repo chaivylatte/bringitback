@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+request4 {
+  display: block;
+  width: 600px;
+  margin: auto;
+  padding: 15px;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+request4in {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to bottom left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: inherit;
+}
+request4head {
+  align-self: flex-start;
+  display: block;
+  margin-left: -20px;
+  border-radius: 0 10px 10px 0;
+  background: rgba(var(--bgelev1));
+  padding: 15px;
+  font: 400 35px carter one;
+}
+request4head span { background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); -webkit-box-decoration-break: clone; }
+request4 .writing {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+  text-align: justify;
+  font-size: 14px;
+  line-height: 150%;
+}
+request4 .writing > gif {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border-radius: inherit;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  padding: 15px;
+}
+request4 .writing > gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+request4 .writing overflow {
+  max-height: 30em;
+}
+request4 .writing p {
+  margin: 0;
+  margin-top: 15px;
+}
+request4 .writing p:first-child { margin-top: 0; }
+request4 .writing b, thread2 .writing i, thread2 .writing u {
+  font-size: 16px;
+}
+request4 .writing b {
+  font-weight: 700;
+  color: var(--fontaccent2);
+}
+request4 .writing i {
+  font-weight: 700;
+  font-style: italic;
+  color: var(--fontaccent4);
+}
+request4 .writing u {
+  font-family: carter one;
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: underline var(--fontaccent1);
+}
+request4 .writing a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}
+request4 .writing char {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  font-size: 10px;
+  line-height: 150%;
+  text-transform: uppercase;
+  font-weight: 900;
+  border-radius: 10px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+request4 .writing char name {
+  display: block;
+  width: auto;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 100%;
+}
+request4 .writing infoblock {
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center flex-end;
+  align-items: center;
+}
+request4 .writing infoblock span:after {
+  display: inline-block;
+  content: "/";
+  margin: 0 5px;
+  color: var(--fontaccent1);
+}
+request4 .writing infoblock span:last-child:after {
+  content: "";
+  margin: 0;
+}
+request4 .writing charblock {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  grid-gap: 10px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+request4 .writing charblock name {
+  grid-column: 1 / -1;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 100%;
+  color: var(--fontaccent1);
+  background: rgba(var(--bgelev1));
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+request4 .writing charblock name span { background-image: linear-gradient(to left, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); -webkit-box-decoration-break: clone; }
+request4 .writing charblock gif {
+  display: block;
+  width: 70px;
+  height: 70px;
+  background: rgba(var(--bgelev1));
+  padding: 5px;
+  border-radius: 10px;
+  grid-column: 1;
+  grid-row: span 2;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+request4 .writing charblock gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+request4 .writing charblock .writing {
+  grid-column: 2;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center center;
+  align-items: center;
+  background: rgba(var(--bgelev1));
+  font-size: 13px;
+  border-radius: 10px;
+  padding: 10px;
+}
+request4 .writing charblock .writing p:empty, request4 .writing charblock .writing:empty {
+  display: none;
+}
+request4 .writing charblock .writing b, request4 .writing charblock .writing i, request4 .writing charblock .writing u {
+  font-size: 14px;
+}
+request4 .writing charblock .writing overflow {
+  max-height: 4em;
+}
+request4 .writing charblock bbar {
+  grid-column: 2;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  place-content: center flex-end;
+  align-items: center;
+  font-size: 10px;
+  line-height: 150%;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+request4 .writing charblock bbar span {
+  background: rgba(var(--bgelev2));
+  padding: 5px;
+  border-radius: 5px;
+}

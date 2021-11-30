@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+call5 {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  width: 380px;
+  margin: auto;
+  background: rgba(var(--bgelev1));
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+  font: 600 15px nunito;
+}
+call5 topper {
+  order: 1;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  place-content: center space-between;
+  align-items: center;
+}
+call5 gif {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+call5 gif.circle {
+  border-radius: 50%;
+}
+call5 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+call5 recipient {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  place-content: center center;
+  align-items: center;
+  font-size: 30px;
+  text-transform: lowercase;
+  font-weight: 800;
+  line-height: 150%;
+  text-align: center;
+}
+call5 recipient span {
+  background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); -webkit-box-decoration-break: clone;
+}
+call5 recipient:after {
+  content: "now connected to";
+  display: block;
+  border-top: 1px solid rgba(var(--bgelev6));
+  padding: 5px 15px 0;
+  font-size: 10px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  line-height: 150%;
+  font-weight: 900;
+  align-self: flex-start;
+  color: rgba(var(--fontdim));
+}
+call5 bbar {
+  order: 3;
+  display: flex;
+  gap: 10px;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid rgba(var(--bgelev6));
+  padding-top: 15px;
+}
+call5 bbar span {
+  background: rgba(var(--bgelev2));
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  letter-spacing: 0.25px;
+  text-transform: uppercase;
+  line-height: 150%;
+  font-weight: 900;
+  color: rgba(var(--fontdim));
+}
+call5 bbar span:before {
+  content: "end current call";
+}
+call5 bbar i {
+  color: var(--fontaccent1);
+  font-size: 20px;
+  line-height: 100%;
+}
+call5 .actions {
+  order: 2;
+  display: block;
+  width: 100%;
+  text-align: justify;
+  padding: 15px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  border-radius: 15px;
+  line-height: 150%;
+}
+call5 .actions img {
+  max-width: 100%;
+  border-radius: inherit;
+}
+call5 .actions p {
+  margin: 0;
+  margin-top: 15px;
+}
+call5 .actions p:first-of-type {
+  margin-top: 0;
+  border-radius: 0 15px 15px 15px;
+}
+call5 .actions b, call5 .actions i, call5 .actions u {
+  font-size: 15px;
+  background: rgba(var(--bgelev1));
+  padding: 1px 5px;
+  border-radius: 5px;
+  line-height: 100%;
+  -webkit-box-decoration-break: clone;
+}
+call5 .actions b {
+  font-weight: 800;
+  color: var(--fontaccent2);
+}
+call5 .actions i {
+  color: var(--fontaccent4);
+}
+call5 .actions u {
+  font: 400 15px carter one;
+  text-decoration: underline var(--fontaccent1);
+}
+call5 .actions a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+  background: rgba(var(--bgelev1));
+  padding: 1px 5px;
+  border-radius: 5px;
+  line-height: 100%;
+  -webkit-box-decoration-break: clone;
+}

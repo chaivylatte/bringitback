@@ -1,0 +1,123 @@
+/****************************************
+ Body Background & Text Style
+*****************************************/
+:root, html[data-theme="light"] { --border: 208, 208, 208; --font: 95, 95, 95; --fontdim: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --shadow: 119, 119, 119; --darken: 0%; --blendmode: darken; }
+html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --bgpure: 19, 19, 19; --bgelev1: 45, 45, 45; --bgelev2: 40, 40, 40; --bgelev3: 35, 35, 35; --bgelev4: 30, 30, 30; --bgelev5: 25, 25, 25; --bgelev6: 20, 20, 20; --shadow: 0, 0, 0; --darken: -10%; --blendmode: exclusion; }
+body { font-family: 'nunito', sans-serif; font-size: 13px; font-weight: 600; line-height: 130%; color: rgba(var(--font)); text-align: justify;
+background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+background-size: cover; background-position: center; background-attachment: fixed; --font1: nunito; --font2: carter one; --lightness1: 88%; --lightness2: 69%; --pastelpercent: -26%; --normalpercent: -20%; }
+body * { box-sizing: border-box!important; }
+body img { object-fit: cover; object-position: center; }
+body img[src*="twemoji.maxcdn"] { width: 100%; height: 100%;  max-width: 0.9em!important; max-height: 0.9em!important; display: inline!important; vertical-align: middle; border-radius: 0!important; }
+overflow { display: block; width: 100%; max-height: 100%; height: auto; padding-right: 10px; overflow: auto; }
+
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+.postactual { background: rgba(var(--bgelev2)); border-radius: 10px; padding: 50px; box-shadow: 0 0 10px 0 rgba(var(--shadow), .25); font-size: 14px; line-height: 130%; text-align: left; }
+
+#theme-toggle {
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+ display: inline-block;
+ z-index: 999;
+}
+#theme-toggle i {
+  display: block;
+  background: rgba(var(--bgelev5), 1);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--font);
+}
+#mg-toggle {
+  z-index: 999;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  display: block;
+  width: auto;
+  height: 20px;
+  color: rgba(var(--font));
+  text-align: center!important;
+  letter-spacing: 0;
+}
+::selection { background: hsl(var(--mghue1), 25%, calc(69% + var(--darken)), .5); color: inherit; text-shadow: none; }
+
+::-webkit-scrollbar { width: 8px; height: 8px; background-color: rgba(var(--bgelev1)); border-radius: 16px; box-sizing: border-box; }
+::-webkit-scrollbar-thumb { background-image: linear-gradient(to top, var(--fontgradient)); border-radius: 16px; box-sizing: border-box; }
+#s-m-t-tooltip { z-index: 999999999999999999!important; margin: 20px 10px 5px 5px; padding: 8px; border-radius: 5px; font-style: italic; font-weight: 700; font-size: 12px; line-height: 100%; text-transform: lowercase; background: rgba(var(--bgelev1)); box-shadow: 0 0 10px 0 rgba(var(--shadow), .25); }
+
+a:link, a:visited, a:active {
+ text-decoration: none;
+ color: inherit;
+}
+a:hover {
+ cursor: crosshair;
+ color: inherit;
+ text-decoration: none;
+}
+
+.inactive, .group-6 { --mghue1: 0; --mgsat1: 0%; --mglight1: 0%; --mghue2: 0; --mgsat2: 0%; --mglight2: -10%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "inactive"; }
+
+:root, .guests, .group-2,
+.validating, .group-1,
+.members, .group-3 { --mghue1: 215; --mgsat1: 69%; --mglight1: 0%; --mghue2: 45; --mgsat2: 69%; --mglight2: 0%; --mghue3: 357; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "hello kitty"; }
+.guests, .group-2 { --groupname: "guests"; }
+
+.staff, .group-4, .topicwr.announcement { --mghue1: 342; --mgsat1: 80%; --mglight1: 0%; --mghue2: 189; --mgsat2: 60%; --mglight2: 0%; --mghue3: 41; --mgsat3: 80%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "little twin stars"; }
+
+/****************************************
+   Standard Groups
+*****************************************/
+pompompurin, .pompompurin, .group-7, .group-8, .mgroup-7, .mgroup-8 { --mghue1: 2; --mgsat1: 59%; --mglight1: -5%; --mghue2: 45; --mgsat2: 65%; --mglight2: -5%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "pompompurin"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903057192461152256/bringit_banner10.png?width=1510&height=1008); }
+
+badtzmaru, .badtzmaru, .group-9, .group-10, .mgroup-9, .mgroup-10 { --mghue1: 49; --mgsat1: 70%; --mglight1: -5%; --mghue2: 0; --mgsat2: 0%; --mglight2: -20%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "badtz maru"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903056855914401892/bringit_banner1.png?width=1343&height=1007); }
+
+keroppi, .keroppi, .group-11, .group-12, .mgroup-11, .mgroup-12 { --mghue1: 111; --mgsat1: 59%; --mglight1: -2%; --mghue2: 350; --mgsat2: 70%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "keroppi"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903056872859394078/bringit_banner2.png); }
+
+cinnamoroll, .cinnamoroll, .group-13, .group-14, .mgroup-13, .mgroup-14 { --mghue1: 158; --mgsat1: 59%; --mglight1: 0%; --mghue2: 308; --mgsat2: 59%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cinnamoroll"; --mgbanner: url(https://cdn.discordapp.com/attachments/866822297586892812/903056907995054100/bringit_banner3.png); }
+
+aggretsuko, .aggretsuko, .group-15, .group-16, .mgroup-15, .mgroup-16 { --mghue1: 215; --mgsat1: 80%; --mglight1: 0%; --mghue2: 36; --mgsat2: 80%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "aggretsuko"; --mgbanner: url(https://cdn.discordapp.com/attachments/866822297586892812/903056960528740382/bringit_banner4.png); }
+
+kuromi, .kuromi, .group-17, .group-18, .mgroup-17, .mgroup-18 { --mghue1: 248; --mgsat1: 69%; --mglight1: -5%; --mghue2: 321; --mgsat2: 75%; --mglight2: -5%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "kuromi"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903057037213196298/bringit_banner5.png?width=1708&height=1008); }
+
+mymelody, .mymelody, .group-19, .group-20, .mgroup-19, .mgroup-20 { --mghue1: 335; --mgsat1: 70%; --mglight1: 0%; --mghue2: 195; --mgsat2: 60%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "my melody"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903057046025404486/bringit_banner6.png?width=1512&height=1008); }
+
+/****************************************
+   Premium Groups
+*****************************************/
+gudetama, .gudetama, .group-21, .group-22, .mgroup-21, .mgroup-22 { --mghue1: 41; --mgsat1: 70%; --mglight1: -5%; --mghue2: 0; --mgsat2: 70%; --mglight2: 0%; --mghue3: 228; --mgsat3: 61%; --mglight3: -10%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "gudetama"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903057084206174218/bringit_banner7.png?width=1512&height=1008); }
+
+hummingmint, .hummingmint, .group-23, .group-24, .mgroup-23, .mgroup-24 { --mghue1: 35; --mgsat1: 60%; --mglight1: 2%; --mghue2: 14; --mgsat2: 60%; --mglight2: 0%; --mghue3: 174; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "hummingmint"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903057107857842226/bringit_banner8.png?width=1512&height=1008); }
+
+ichigoman, .ichigoman, .group-25, .group-26, .mgroup-25, .mgroup-26 { --mghue1: 144; --mgsat1: 48%; --mglight1: 0%; --mghue2: 49; --mgsat2: 75%; --mglight2: 0%; --mghue3: 338; --mgsat3: 80%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "ichigoman"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903057139919101992/bringit_banner9.png?width=1344&height=1008); }
+
+wishmewell, .wishmewell, .group-27, .group-28, .mgroup-27, .mgroup-28 { --mghue1: 348; --mgsat1: 69%; --mglight1: 0%; --mghue2: 175; --mgsat2: 69%; --mglight2: 0%; --mghue3: 250; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "wish me well"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903057213084532796/bringit_banner11.png?width=1512&height=1008); }
+
+/****************************************
+   Exclusive Groups
+*****************************************/
+masyumaro, .masyumaro, .group-29, .group-30, .mgroup-29, .mgroup-30 { --mghue1: 36; --mgsat1: 60%; --mglight1: 2%; --mghue2: 212; --mgsat2: 60%; --mglight2: 2%; --mghue3: 354; --mgsat3: 60%; --mglight3: 2%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "masyumaro"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903057250686488656/bringit_banner12.png?width=1436&height=1009); }
+
+chococat, .chococat, .group-31, .group-32, .mgroup-31, .mgroup-32 { --mghue1: 29; --mgsat1: 70%; --mglight1: 2%; --mghue2: 294; --mgsat2: 50%; --mglight2: 0%; --mghue3: 184; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "chococat"; --mgbanner: url(https://media.discordapp.net/attachments/866822297586892812/903057289659961405/bringit_banner13.png?width=1514&height=1007); }
+
+* {
+--fontaccent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))); --fontaccent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))); --fontaccent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken))); --fontaccent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight4) + var(--darken)));
+}
+.group-1, .group-5, .group-6, .group-7, .group-8, .group-9, .group-10, .group-11, .group-12, .group-13, .group-14, .group-15, .group-16, .group-17, .group-18, .group-19, .group-20,
+.membergrouphereinalllowercase,
+.retired, .inactive, .pompompurin, .badtzmaru, .keroppi, .cinnamoroll, .aggretsuko, .kuromi, .mymelody  {
+--pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
+--fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken)));
+}
+.group-2, .group-3, .group-4, .group-21, .group-22, .group-23, .group-24, .group-25, .group-26, .group-27, .group-28, .group-29, .group-30,  .group-31, .group-32,
+.topicwr.announcement,
+.guests, .members, .staff, .gudetama, .hummingmint, .ichigoman, .wishmewell, .masyumaro, .chococat {
+--pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
+--fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken)));
+}
+
+.allowtagcolors a.user-tagged { background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); -webkit-box-decoration-break: clone; }
