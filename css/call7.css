@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+call7 {
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  width: 430px;
+  margin: auto;
+  background: rgba(var(--bgelev1));
+  border-radius: 30px;
+  font: 600 15px nunito;
+  line-height: 1;
+  box-shadow: 0 20px 20px 0 hsla(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken)), .2);
+}
+call7 topper {
+  order: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  border-radius: inherit;
+  padding: 35px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to bottom left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+call7 topicons {
+  width: 100%;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+}
+call7 topper i {
+  color: rgba(var(--bgelev1));
+  font-size: 18px;
+  line-height: 100%;
+}
+call7 recipient {
+  display: block;
+  order: 3;
+  flex-grow: 1;
+  font-size: 22px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+  line-height: 1;
+}
+call7 recipient:nth-last-child(3) {
+  max-width: calc(100% - 120px)!important;
+}
+call7 recipient span {
+  display: inline-block;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+call7 gif {
+  flex: none;
+  order: 4;
+  display: block;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+}
+call7 gif.circle {
+  border-radius: 50%;
+}
+call7 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+call7 bottbar {
+  order: 4;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  padding: 25px 30px;
+  font-size: 18px;
+  line-height: 1;
+  color: rgba(var(--bgelev1));
+  border-radius: inherit;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to right, hsla(var(--mghue4), calc(var(--mgsat4) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight4) + var(--darken)), .85), hsla(var(--mghue4), calc(var(--mgsat4) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight4) + var(--darken)), 1), hsla(var(--mghue4), calc(var(--mgsat4) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight4) + var(--darken)), .85)); background-blend-mode: var(--blendmode);
+}
+call7 .actions {
+  order: 3;
+  width: calc(100% - 100px);
+  display: block;
+  margin: 30px 50px;
+  background-color: rgba(var(--bgelev2));
+  border-radius: 10px;
+  padding: 15px;
+  line-height: 1.5;
+  text-align: justify;
+}
+call7 .actions img {
+  display: block;
+  max-width: 100%;
+  border-radius: 10px;
+}
+call7 .actions p {
+  margin: 0;
+  margin-top: 10px;
+}
+call7 .actions p:first-child {
+  margin-top: 0;
+}
+call7 .actions b {
+  color: var(--fontaccent1);
+  font-size: 16px;
+  font-weight: 900;
+}
+call7 .actions i {
+  color: var(--fontaccent1);
+  font-size: 16px;
+  font-weight: 800;
+}
+call7 .actions u {
+  text-decoration-color: var(--fontaccent1);
+  font: 400 16px carter one;
+}
+call7 .actions a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}
