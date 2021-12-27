@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+thread7 {
+  display: block;
+  font: 600 14px nunito;
+  line-height: 1;
+  width: 400px;
+  margin: auto;
+  border-radius: 20px;
+  background: rgba(var(--bgelev1));
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .2);
+  overflow: hidden;
+}
+thread7 topper {
+  display: block;
+  padding: 60px;
+}
+thread7 topper:empty {
+  padding: 30px;
+}
+thread7 topper img {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  border-radius: 50px / 40px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .2);
+}
+thread7 midspace {
+  display: block;
+  width: 100%;
+  border-radius: 60px 0 0 0;
+  padding: 50px;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
+}
+thread7 .writing {
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 40px;
+  border-radius: 20px;
+  text-align: justify;
+  line-height: 1.5;
+}
+thread7 .writing p {
+  margin: 0;
+  margin-top: 15px;
+}
+thread7 .writing p:first-child {
+  margin-top: 0;
+}
+thread7 .writing overflow {
+  max-height: 25em;
+}
+thread7 .writing b {
+  font-size: 16px;
+  font-weight: 800;
+  background-image: linear-gradient(to left, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
+thread7 .writing i {
+  font-size: 16px;
+  color: var(--fontaccent1);
+}
+thread7 .writing u {
+  font: 400 16px carter one;
+  text-decoration: underline var(--fontaccent4);
+}
+thread7 .writing a {
+  color: var(--fontaccent2);
+  text-decoration: underline;
+}
+thread7 tagspace {
+  display: block;
+  margin-top: 20px;
+  background: rgba(var(--bgelev1));
+  border-radius: 20px;
+  padding: 25px 15px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: .25px;
+  text-transform: uppercase;
+}
+thread7 tagspace span {
+  background-image: linear-gradient(to left, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0);
+}
