@@ -28,7 +28,7 @@ thread7 topper img {
 thread7 midspace {
   display: block;
   width: 100%;
-  border-radius: 60px 0 0 0;
+  border-radius: 50px 0 0 0;
   padding: 50px;
   background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
   box-shadow: 0 0 10px 0 rgba(var(--shadow), .15);
