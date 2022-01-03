@@ -105,6 +105,10 @@ masyumaro, .masyumaro, .group-29, .group-30, .allowtagcolors .mgroup-29, .allowt
 
 chococat, .chococat, .group-31, .group-32, .allowtagcolors .mgroup-31, .allowtagcolors .mgroup-32 { --mghue1: 29; --mgsat1: 70%; --mglight1: 2%; --mghue2: 294; --mgsat2: 50%; --mglight2: 0%; --mghue3: 184; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "chococat"; --mgbanner: url(https://img.nickpic.host/g1E19x.jpg); }
 
+hangyodon, .hangyodon, .group-33, .group-34, .allowtagcolors .mgroup-33, .allowtagcolors .mgroup-34 { --mghue1: 130; --mgsat1: 60%; --mglight1: -2%; --mghue2: 260; --mgsat2: 50%; --mglight2: 0%; --mghue3: 6; --mgsat3: 80%; --mglight3: 1%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "hangyodon"; --mgbanner: url(https://img.nickpic.host/q1xwxb.jpg); }
+
+paupipo, .paupipo, .group-35, .group-36, .allowtagcolors .mgroup-35, .allowtagcolors .mgroup-36 { --mghue1: 188; --mgsat1: 65%; --mglight1: 3%; --mghue2: 28; --mgsat2: 45%; --mglight2: 2%; --mghue3: 224; --mgsat3: 70%; --mglight3: 1%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "paupipo"; --mgbanner: url(https://img.nickpic.host/q1GxRX.jpg); }
+
 * {
 --fontaccent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))); --fontaccent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))); --fontaccent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken))); --fontaccent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight4) + var(--darken)));
 }

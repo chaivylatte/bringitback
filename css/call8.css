@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+call8 {
+  display: block;
+  width: 400px;
+  margin: auto;
+  border-radius: 20px;
+  background: rgba(var(--bgelev1));
+  overflow: hidden;
+  box-shadow: 0 0 25px 0 rgba(var(--shadow), .35);
+  font: 600 14px nunito;
+  line-height: 1;
+}
+call8 topper {
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to bottom, hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken))), transparent); background-blend-mode: var(--blendmode);
+}
+call8 topbar {
+  order: 1;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  font-size: 20px;
+}
+call8 topbar i {
+  --fa-secondary-opacity: 1;
+}
+call8 topbar i:last-child {
+  --fa-primary-color: var(--fontaccent1);
+}
+call8 .actions {
+  order: 2;
+  display: block;
+  width: calc(100% - 100px);
+  margin: 50px;
+  margin-top: 10px;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  padding: 15px;
+  font-size: 15px;
+  line-height: 1.5;
+  text-align: justify;
+}
+call8 .actions p {
+  margin: 0;
+  margin-top: 15px;
+}
+call8 .actions p:first-child {
+  margin-top: 0;
+}
+call8 .actions b {
+  color: var(--fontaccent1);
+  font-size: 16px;
+  font-weight: 800;
+}
+call8 .actions i {
+  color: var(--fontaccent1);
+  font-size: 16px;
+}
+call8 .actions u {
+  text-decoration: underline var(--fontaccent1);
+  font: 400 15px carter one;
+}
+call8 .actions a {
+  color: var(--fontaccent1);
+  text-decoration: underline;
+}
+call8 .actions img {
+  display: block;
+  margin: 0;
+  max-width: 100%;
+  border-radius: inherit;
+}
+call8 bott {
+  display: flex;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  width: 100%;
+  border-radius: inherit;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top, hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue4), calc(var(--mgsat4) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight4) + var(--darken)))); background-blend-mode: var(--blendmode);
+}
+call8 gifspace {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  width: 100%;
+  padding: 40px;
+}
+call8 recipient {
+  display: block;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -0.75px;
+}
+call8 gif {
+  display: block;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .2);
+}
+call8 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+call8 bottbar {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  width: 100%;
+  background: rgba(var(--bgelev1));
+  border-radius: 25px 25px 0 0;
+  padding: 20px 50px;
+  font-size: 30px;
+  color: var(--fontaccent2);
+}
+call8 bottbar i {
+  opacity: .3;
+  padding: 1%;
+}
+call8 bottbar i:nth-child(2) {
+  opacity: .75;
+}

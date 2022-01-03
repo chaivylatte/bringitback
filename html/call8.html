@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Document</title>
+
+<script>
+const theme = localStorage.getItem('theme');
+	if (theme === "dark") {
+		document.documentElement.setAttribute('data-theme', 'dark');
+	} else if (theme === "light") {
+  	document.documentElement.setAttribute('data-theme', 'light');
+  }
+</script>
+
+<script src="https://kit.fontawesome.com/124d685f7e.js" crossorigin="anonymous"></script>
+
+<link href="../css/index.css" rel="stylesheet">
+<link href="../css/call8.css" rel="stylesheet">
+
+</head>
+<body class="body group-4"><a id="theme-toggle" class="daynight" onclick="modeSwitcher()" title="toggle day/night mode"><i class="fas fa-moon"></i></a><div id="mg-toggle"><form class="forminput" action="#"><select id="mgcolor"><option value="------------" selected="selected">change membergroup</option><option value="group-1">validating</option><option value="group-2">guests</option><option value="group-3">members</option><option value="group-4">staff</option><option value="group-6">inactive</option><option value="pompompurin">pompompurin</option><option value="badtzmaru">badtz maru</option><option value="keroppi">keroppi</option><option value="cinnamoroll">cinnamoroll</option><option value="aggretsuko">aggretsuko</option><option value="kuromi">kuromi</option><option value="mymelody">my melody</option><option value="gudetama">gudetama</option><option value="hummingmint">hummingmint</option><option value="ichigoman">ichigoman</option><option value="wishmewell">wish me well</option><option value="masyumaro">masyumaro</option><option value="chococat">chococat</option><option value="hangyodon">hangyodon</option><option value="paupipo">paupipo</option></select></form></div>
+<div id="mgchanger" class="postwr group-4"><div class="postactual">
+
+
+<call8><topper><div class="actions">
+
+<p>this is what a phone call looks like
+<p>this is a longer paragraph with <b>bold</b> and <i>italics</i> and <u>underline</u> and a <a href="#">link</a>
+
+</div><topbar><i class="fa-duotone fa-grip-lines"></i><i class="fa-duotone fa-battery-full"></i></topbar></topper><bott><gifspace><recipient>
+
+recipient name here
+
+</recipient><gif>
+
+<img src="https://64.media.tumblr.com/9fcefa13c875bf1c95f1f43a3942992b/39fe863aee39c6a1-42/s400x600/bbcccc59437b64c7e033bf66fb458fc94905bd1c.gif">
+
+</gif></gifspace><bottbar><i class="fa-solid fa-house"></i><i class="fa-solid fa-phone"></i><i class="fa-solid fa-gears"></i></bottbar></bott></call8>
+
+
+</div></div></body>
+<script src="../js/daynight.js"></script>
+<script>
+document.getElementById('mgcolor').onchange = function(){
+    document.getElementById('mgchanger').className = this.value;
+};
+</script>
+</html>
