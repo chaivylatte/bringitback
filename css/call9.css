@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+call9 {
+  display: block;
+  width: 450px;
+  margin: auto;
+  background: rgba(var(--bgelev1));
+  border-radius: 20px;
+  padding: 15px;
+  line-height: 1;
+  font: 600 15px nunito;
+}
+@keyframes bounceScale {
+  0%, 20% {
+    opacity: 0;
+    border-width: 3px;
+  }
+  10% {
+    opacity: 1;
+  }
+  20%, 100% {
+    transform: scale(2);
+    border-width: 1px;
+    opacity: 0;
+  }
+}
+@keyframes bounce {
+  0%, 20% {
+    transform: scale(1);
+  }
+  5% {
+    transform: scale(1.15);
+  }
+}
+call9 inner {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  position: relative;
+  background: rgba(var(--bgelev2));
+  border-radius: inherit;
+}
+call9 gifsur {
+  order: 1;
+  width: 120px;
+  height: 120px;
+  align-self: flex-end;
+  margin-right: 35px;
+  border-radius: 0 0 10px 10px;
+  padding: 12px;
+  display: block;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+call9 gif {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  border-radius: 10px;
+}
+call9 gif img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+call9 midspace {
+  margin-top: 30px;
+  min-height: 54px;
+  padding: 20px;
+  order: 2;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  place-content: center flex-start;
+  align-items: center;
+  width: calc(100% - 70px);
+  border-radius: 20px 20px 0 0;
+  background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to bottom left, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+call9 connected {
+  order: 1;
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+call9 connected:before {
+  content: "now connected";
+  display: block;
+  font-size: 17px;
+  letter-spacing: 0.25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: var(--fontaccent4) underline wavy;
+}
+call9 .actions {
+  order: 2;
+  width: 100%;
+  display: block;
+  background: rgba(var(--bgelev1), .85);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: justify;
+  align-self: flex-end;
+  line-height: 1.5;
+}
+call9 .actions b {
+  color: var(--fontaccent1);
+  font-size: 16px;
+  font-weight: 800;
+}
+call9 .actions i {
+  color: var(--fontaccent4);
+  font-size: 16px;
+}
+call9 .actions u {
+  text-decoration: underline var(--fontaccent3);
+  font: 400 15px carter one;
+}
+call9 .actions a {
+  color: var(--fontaccent2);
+  text-decoration: underline;
+}
+call9 .actions p {
+  margin: 0;
+  margin-top: 15px;
+}
+call9 .actions p:first-child {
+  margin-top: 0;
+}
+call9 .actions img {
+  display: block;
+  max-width: 100%;
+  border-radius: inherit;
+}
+call9 recipient {
+  order: 3;
+  display: block;
+  align-self: flex-start;
+  margin-left: -20px;
+  background: rgba(var(--bgelev1), .85);
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  font-size: 17px;
+  letter-spacing: 0.25px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: var(--fontaccent1) underline wavy;
+}
+call9 bottbar {
+  order: 3;
+  display: flex;
+  gap: 10px;
+  place-content: center center;
+  align-items: center;
+  width: 100%;
+  border-radius: 15px;
+  padding: 15px;
+  background: rgba(var(--bgelev3));
+}
+call9 bottbar i {
+  color: var(--fontaccent1);
+  font-size: 22px;
+}
+call9 bottbar span {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  flex-grow: 1;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  padding: 10px;
+}
+call9 bottbar span:before {
+  content: "end call";
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: rgba(var(--fontdim));
+}
+call9 bottbar span i {
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  font-size: 12px;
+  min-width: 22px;
+  height: 22px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  background: rgba(var(--bgelev6));
+  color: rgba(var(--bgelev1));
+}
+call9 blobicon {
+  position: absolute;
+  top: 54px;
+  left: 35px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(var(--bgelev2));
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  color: var(--fontaccent4);
+  animation: bounce 3s cubic-bezier(0.3,0,0.7,1) infinite 2s;
+  // will-change: transform;
+  // transition: transform cubic-bezier(0.3,0,0.7,1);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  z-index: 91;
+}
+call9 blobicon:before {
+  position: absolute;
+  content: "";
+  border: 3px solid rgba(var(--bgelev2));
+  border-radius: 50%;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  animation: bounceScale 3s cubic-bezier(0.3,0,0.7,1) infinite 2s;
+}
+call9 blob1 {
+}
+call9 blob1 > svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 300px;
+  height: auto;
+  fill: rgba(var(--bgelev1));
+  z-index: 90;
+}
+call9 blob1 > svg path {
+  transform: translate(100px, 150px);
+ d: path("M72.1,-112.2C103.5,-92,145.9,-89,167.4,-68.6C188.9,-48.2,189.5,-10.4,189.6,31.2C189.7,72.8,189.3,118.3,169,152.4C148.7,186.5,108.4,209.4,70.8,203C33.2,196.7,-1.9,161.2,-37.4,143.5C-73,125.7,-109,125.7,-149.1,111.4C-189.1,97.1,-233.1,68.5,-238.1,34.2C-243,0,-208.8,-39.9,-182.3,-77.1C-155.7,-114.3,-136.8,-148.8,-107.7,-170.1C-78.6,-191.3,-39.3,-199.1,-9.5,-184.4C20.4,-169.7,40.7,-132.4,72.1,-112.2Z");
+}
+call9 blob2 {
+}
+call9 blob2 > svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 400px;
+  height: auto;
+  fill: rgba(var(--bgelev1), .55);
+  z-index: 89;
+}
+call9 blob2 > svg path {
+  transform: translate(60px, 102px);
+ d: path("M72.1,-112.2C103.5,-92,145.9,-89,167.4,-68.6C188.9,-48.2,189.5,-10.4,189.6,31.2C189.7,72.8,189.3,118.3,169,152.4C148.7,186.5,108.4,209.4,70.8,203C33.2,196.7,-1.9,161.2,-37.4,143.5C-73,125.7,-109,125.7,-149.1,111.4C-189.1,97.1,-233.1,68.5,-238.1,34.2C-243,0,-208.8,-39.9,-182.3,-77.1C-155.7,-114.3,-136.8,-148.8,-107.7,-170.1C-78.6,-191.3,-39.3,-199.1,-9.5,-184.4C20.4,-169.7,40.7,-132.4,72.1,-112.2Z");
+}

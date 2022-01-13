@@ -118,9 +118,9 @@ paupipo, .paupipo, .group-35, .group-36, .allowtagcolors .mgroup-35, .allowtagco
 --pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
 --fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken)));
 }
-.group-2, .group-3, .group-4, .group-21, .group-22, .group-23, .group-24, .group-25, .group-26, .group-27, .group-28, .group-29, .group-30,  .group-31, .group-32,
+.group-2, .group-3, .group-4, .group-21, .group-22, .group-23, .group-24, .group-25, .group-26, .group-27, .group-28, .group-29, .group-30, .group-31, .group-32, .group-33, .group-34, .group-35, .group-36,
 .topicwr.announcement,
-.guests, .members, .staff, .gudetama, .hummingmint, .ichigoman, .wishmewell, .masyumaro, .chococat {
+.guests, .members, .staff, .gudetama, .hummingmint, .ichigoman, .wishmewell, .masyumaro, .chococat, .hangyodon, .paupipo {
 --pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight3) + var(--darken)));
 --fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken)));
 }
