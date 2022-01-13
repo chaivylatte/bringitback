@@ -54,18 +54,25 @@ call9 gifsur {
   background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
 }
 call9 gif {
-  display: block;
+  display: flex;
+  place-content: center center;
+  align-items: center;
   width: 100%;
   height: 100%;
   background: rgba(var(--bgelev1));
   padding: 8px;
   border-radius: 10px;
+  font-size: 45px;
+  color: var(--fontaccent1);
 }
 call9 gif img {
   display: block;
   width: 100%;
   height: 100%;
   border-radius: inherit;
+}
+call9 gif img:nth-child(2) {
+  display: none;
 }
 call9 midspace {
   margin-top: 30px;
