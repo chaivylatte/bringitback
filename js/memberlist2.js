@@ -58,6 +58,7 @@ var $grid = $('.memlsur').isotope({
   itemSelector: '.memlcharsur',
   layoutMode: 'fitRows',
   fitRows: {
+    columnWidth: '.grid-sizer',
   gutter: '.gutter-sizer'
 },
   getSortData: {
@@ -86,6 +87,7 @@ var $grid = $('.memlsur').isotope({
   itemSelector: '.memlcharsur',
   layoutMode: 'fitRows',
   fitRows: {
+    columnWidth: '.grid-sizer',
   gutter: '.gutter-sizer'
 },
   getSortData: {
