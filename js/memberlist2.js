@@ -57,6 +57,9 @@ var $grid = $('.memlsur').isotope({
   percentPosition: true,
   itemSelector: '.memlcharsur',
   layoutMode: 'fitRows',
+  fitRows: {
+  gutter: '.gutter-sizer'
+},
   getSortData: {
     name: '.memlcharname span a',
     faceclaim: '.memlfc span',
@@ -76,12 +79,15 @@ var $grid = $('.memlsur').isotope({
     var hashResult = hashID ? $this.is( hashID ) : true;
     return searchResult && fcResult && buttonResult && hashResult;
   }
-  });        
+  });
  } else {
 var $grid = $('.memlsur').isotope({
   percentPosition: true,
   itemSelector: '.memlcharsur',
   layoutMode: 'fitRows',
+  fitRows: {
+  gutter: '.gutter-sizer'
+},
   getSortData: {
     name: '.memlcharname',
     mostposts: '.mem-tp parseInt',
