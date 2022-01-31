@@ -57,9 +57,6 @@ var $grid = $('.memlsur').isotope({
   percentPosition: true,
   itemSelector: '.memlcharsur',
   layoutMode: 'fitRows',
-  fitRows: {
-  gutter: '.gutter-sizer'
-},
   getSortData: {
     name: '.memlcharname span a',
     faceclaim: '.memlfc span',
@@ -85,9 +82,6 @@ var $grid = $('.memlsur').isotope({
   percentPosition: true,
   itemSelector: '.memlcharsur',
   layoutMode: 'fitRows',
-  fitRows: {
-  gutter: '.gutter-sizer'
-},
   getSortData: {
     name: '.memlcharname',
     mostposts: '.mem-tp parseInt',
