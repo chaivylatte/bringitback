@@ -119,7 +119,7 @@ var $filterCount = $('.filter-count');
 var filters = {};
 
 // bind filter button click
-$('.memlfilters').on( 'click', '.button', function() {
+$('.memlfilters').on( 'change', '.button', function() {
   var $this = $(this);
   // get group key
   var $buttonGroup = $this.parents('.button-group');
@@ -134,7 +134,7 @@ $('.memlfilters').on( 'click', '.button', function() {
 });
 
 // bind sort button click
-$('.memlfilters').on( 'click', 'button', function() {
+$('.memlfilters').on( 'change', 'button', function() {
   var sortByValue = $(this).attr('data-sort-by');
   $grid.isotope({ sortBy: sortByValue });
 });
@@ -160,7 +160,7 @@ updateFilterCount();
 // change is-checked class on buttons
 $('.button-group').each( function( i, buttonGroup ) {
   var $buttonGroup = $( buttonGroup );
-  $buttonGroup.on( 'click', 'button', function() {
+  $buttonGroup.on( 'change', 'button', function() {
     $buttonGroup.find('.is-checked').removeClass('is-checked');
     $( this ).addClass('is-checked');
   });
