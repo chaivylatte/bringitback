@@ -134,7 +134,7 @@ $('.memlfilters').on( 'change', '.button', function() {
 });
 
 // bind sort button click
-$('.memlfilters').on( 'change', 'button', function() {
+$('.memlfilters').on( 'change', '.button', function() {
   var sortByValue = $(this).attr('data-sort-by');
   $grid.isotope({ sortBy: sortByValue });
 });
