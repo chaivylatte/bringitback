@@ -33,7 +33,7 @@ const sortedMembersNS = membersNS.sort();
 for (var i = 0; i < sortedMembers.length; i++) {
    if (sortedMembers[i] != undefined) {
 let filter = "." + sortedMembersNS[i];
-       $('[data-filter-group=aliases]').append('<option class="option" data-filter=".' + membersNS[i] + '">' + members[i] + '</option>');
+       $('[data-filter-group=aliases] overflow').append('<button class="button" data-filter=".' + membersNS[i] + '">' + members[i] + '</button>');
    }
 }
 
