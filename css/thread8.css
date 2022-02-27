@@ -24,7 +24,7 @@ thread8 .writing {
   line-height: 2;
 }
 thread8 .writing overflow {
-  max-height: 200px;
+  max-height: 25em;
 }
 thread8 .writing p {
   margin: 0;
