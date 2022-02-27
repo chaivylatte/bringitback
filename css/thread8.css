@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url("https://use.typekit.net/jhi5swa.css");
 
 thread8 {
   display: block;
@@ -10,7 +11,7 @@ thread8 {
   overflow: hidden;
   position: relative;
   z-index: 0;
-  font: 600 14px nunito;
+  font: 400 14px filson-soft;
   line-height: 1;
 }
 thread8 .writing {
@@ -29,7 +30,7 @@ thread8 .writing p {
 }
 thread8 .writing p:first-letter {
   color: var(--fontaccent2);
-  font: 400 16px carter one;
+  font: 400 16px fugaz one;
   margin-right: 2px;
   text-transform: uppercase;
   display: inline-block;
@@ -48,7 +49,7 @@ thread8 .writing i {
 }
 thread8 .writing u {
   text-decoration: underline var(--fontaccent3);
-  font: 400 15px carter one;
+  font: 400 15px fugaz one;
 }
 thread8 .writing a {
   color: var(--fontaccent2);
@@ -131,7 +132,7 @@ thread8 tagspace {
   margin-right: 30px;
   padding: 15px;
   border-radius: 15px;
-  font: 400 18px carter one;
+  font: 400 18px fugaz one;
   line-height: 1;
 }
 thread8 tagspace span {
