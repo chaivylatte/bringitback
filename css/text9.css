@@ -128,7 +128,7 @@ text9 .messages i {
 }
 text9 .messages u {
   text-decoration: underline var(--fontaccent3);
-  font: 400 15px carter one;
+  font: 400 15px fugaz one;
 }
 text9 .messages a {
   color: var(--fontaccent2);

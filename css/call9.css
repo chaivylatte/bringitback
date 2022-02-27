@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://use.typekit.net/jhi5swa.css");
 
 call9 {
   display: block;
@@ -8,7 +8,7 @@ call9 {
   border-radius: 20px;
   padding: 15px;
   line-height: 1;
-  font: 600 15px nunito;
+  font: 600 15px filson-soft;
 }
 @keyframes bounceScale {
   0%, 20% {
@@ -125,7 +125,7 @@ call9 .actions i {
 }
 call9 .actions u {
   text-decoration: underline var(--fontaccent3);
-  font: 400 15px carter one;
+  font: 400 15px fugaz one;
 }
 call9 .actions a {
   color: var(--fontaccent2);
