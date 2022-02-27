@@ -23,6 +23,9 @@ thread8 .writing {
   text-align: justify;
   line-height: 2;
 }
+thread8 .writing overflow {
+  max-height: 300px;
+}
 thread8 .writing p {
   margin: 0;
   margin-top: 20px;
