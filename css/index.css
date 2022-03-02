@@ -1,22 +1,30 @@
 /****************************************
  Body Background & Text Style
 *****************************************/
-:root, html[data-theme="light"] { --border: 208, 208, 208; --font: 95, 95, 95; --fontdim: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --shadow: 119, 119, 119; --darken: 0%; --blendmode: darken; }
-html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --bgpure: 19, 19, 19; --bgelev1: 45, 45, 45; --bgelev2: 40, 40, 40; --bgelev3: 35, 35, 35; --bgelev4: 30, 30, 30; --bgelev5: 25, 25, 25; --bgelev6: 20, 20, 20; --shadow: 0, 0, 0; --darken: -10%; --blendmode: exclusion; }
-body { font-family: 'nunito', sans-serif; font-size: 13px; font-weight: 600; line-height: 130%; color: rgba(var(--font)); text-align: justify;
-background-color: rgba(var(--bgelev1)); background-image: linear-gradient(to top right, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
-background-size: cover; background-position: center; background-attachment: fixed; --font1: nunito; --font2: carter one; --lightness1: 88%; --lightness2: 69%; --pastelpercent: -26%; --normalpercent: -20%; }
-body * { box-sizing: border-box!important; }
-body img { object-fit: cover; object-position: center; }
-body img[src*="twemoji.maxcdn"] { width: 100%; height: 100%;  max-width: 0.9em!important; max-height: 0.9em!important; display: inline!important; vertical-align: middle; border-radius: 0!important; }
+html, body { margin: 0; padding: 0; box-sizing: border-box; }
+* { box-sizing: border-box; -webkit-box-decoration-break: clone; }
+form { display:inline; }
+
+:root, html[data-theme="light"] { --border: 208, 208, 208; --font: 95, 95, 95; --fontdim: 119, 119, 119; --bgpure: 255, 255, 255; --bgelev1: 245, 245, 245; --bgelev2: 240, 240, 240; --bgelev3: 235, 235, 235; --bgelev4: 230, 230, 230; --bgelev5: 225, 225, 225; --bgelev6: 220, 220, 220; --shadow: 119, 119, 119; --darken: 0%; --blendmode: normal; }
+html[data-theme="dark"] { --border: 93, 93, 93; --font: 245, 245, 245; --fontdim: 235, 235, 235; --bgpure: 19, 19, 19; --bgelev1: 45, 45, 45; --bgelev2: 40, 40, 40; --bgelev3: 35, 35, 35; --bgelev4: 30, 30, 30; --bgelev5: 25, 25, 25; --bgelev6: 20, 20, 20; --shadow: 0, 0, 0; --darken: -10%; --blendmode: difference; }
+
+body { position: relative; font-family: 'filson-soft', sans-serif; font-size: 13px; font-weight: 500; line-height: 1; color: rgba(var(--font)); text-align: justify; background: rgba(var(--bgelev1)) linear-gradient(to bottom right, var(--pastelgradient1)); background-blend-mode: var(--blendmode); background-size: cover; background-position: center; background-attachment: fixed; --font1: filson-soft; --font2: fugaz one; --lightness1: 90%; --lightness2: 65%; --pastelpercent: -26%; --normalpercent: -18%; --sidebarwidth: 70px; }
+
+*[isEmpty=""], *[isEmpty="<i>No Information</i>"], *[isEmpty="n/a"], *[isEmpty="no information"], *[isEmpty="n/an/a"], *[isEmpty="never"], *[isEmpty="not applicable"] { display: none!important; }
+::selection { background: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--darken))); color: inherit; text-shadow: none; }
+body img { object-fit: cover!important; object-position: center!important; }
 overflow { display: block; width: 100%; max-height: 100%; height: auto; padding-right: 10px; overflow: auto; }
+b { font-weight: 700; }
+
+body img[src*="twemoji.maxcdn"] { width: 100%; height: 100%;  max-width: 1em!important; max-height: 1em!important; display: inline!important; vertical-align: middle; border-radius: 0!important; }
+body img[src*="/badges/"] { width: 100%; height: 100%;  max-width: 23px; max-height: 23px; display: inline; vertical-align: middle; border-radius: 0!important; }
 
 
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 @import url("https://use.typekit.net/jhi5swa.css");
 
 @import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-.postactual { background: rgba(var(--bgelev2)); border-radius: 10px; padding: 50px; box-shadow: 0 0 10px 0 rgba(var(--shadow), .25); font-size: 14px; line-height: 130%; text-align: left; }
+.postactual { display: block; margin: 20px; background: rgba(var(--bgelev2)); border-radius: 10px; padding: 50px; box-shadow: 0 0 10px 0 rgba(var(--shadow), .25); font-size: 14px; line-height: 130%; text-align: left; }
 
 #theme-toggle {
   position: fixed;
@@ -27,7 +35,7 @@ overflow { display: block; width: 100%; max-height: 100%; height: auto; padding-
 }
 #theme-toggle i {
   display: block;
-  background: rgba(var(--bgelev5), 1);
+  background: rgba(var(--bgelev2), 1);
   border-radius: 100%;
   width: 40px;
   height: 40px;
@@ -48,7 +56,6 @@ overflow { display: block; width: 100%; max-height: 100%; height: auto; padding-
   text-align: center!important;
   letter-spacing: 0;
 }
-::selection { background: hsl(var(--mghue1), 25%, calc(69% + var(--darken)), .5); color: inherit; text-shadow: none; }
 
 ::-webkit-scrollbar { width: 8px; height: 8px; background-color: rgba(var(--bgelev1)); border-radius: 16px; box-sizing: border-box; }
 ::-webkit-scrollbar-thumb { background-image: linear-gradient(to top, var(--fontgradient)); border-radius: 16px; box-sizing: border-box; }
@@ -66,59 +73,77 @@ a:hover {
 
 .membergrouphereinalllowercase,
 .retired, .group-1, .allowtagcolors .mgroup-1,
-.inactive, .group-6, .allowtagcolors .mgroup-6 { --mghue1: 0; --mgsat1: 0%; --mglight1: 0%; --mghue2: 0; --mgsat2: 0%; --mglight2: -10%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "inactive"; --mgbanner: url(https://img.nickpic.host/g1EKqq.jpg); }
+.inactive, .group-6, .allowtagcolors .mgroup-6,
+.banned, .group-5, .allowtagcolors .mgroup-5 { --mghue1: 0; --mgsat1: 0%; --mglight1: 0%; --mghue2: 0; --mgsat2: 0%; --mglight2: -10%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "inactive"; --mgbanner: url(https://img.nickpic.host/u2BSIA.jpg); }
+
+.retired, .group-1, .allowtagcolors .mgroup-1 { --groupname: "retired"; }
+.banned, .group-5, .allowtagcolors .mgroup-5 { --groupname: "banned"; }
 
 :root, .guests, .group-2, .allowtagcolors .mgroup-2,
-.members, .group-3, .allowtagcolors .mgroup-3 { --mghue1: 215; --mgsat1: 69%; --mglight1: 0%; --mghue2: 45; --mgsat2: 69%; --mglight2: 0%; --mghue3: 357; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "hello kitty"; --mgbanner: url(https://img.nickpic.host/g1EKqq.jpg); }
+.members, .group-3, .allowtagcolors .mgroup-3 { --mghue1: 215; --mgsat1: 69%; --mglight1: 0%; --mghue2: 45; --mgsat2: 69%; --mglight2: 0%; --mghue3: 357; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "hello kitty"; --mgbanner: url(https://img.nickpic.host/u2BSIA.jpg); }
 .guests, .group-2 { --groupname: "guests"; }
 
-.staff, .group-4, .allowtagcolors .mgroup-4, .topicwr.announcement { --mghue1: 342; --mgsat1: 80%; --mglight1: 0%; --mghue2: 189; --mgsat2: 60%; --mglight2: 0%; --mghue3: 41; --mgsat3: 80%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "little twin stars"; --mgbanner: url(https://img.nickpic.host/g1Ew6O.jpg); }
+.staff, .group-4, .allowtagcolors .mgroup-4, .topicwr.announcement { --mghue1: 342; --mgsat1: 80%; --mglight1: 0%; --mghue2: 189; --mgsat2: 60%; --mglight2: 0%; --mghue3: 41; --mgsat3: 80%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "little twin stars"; --mgbanner: url(https://img.nickpic.host/u23rzY.jpg); }
 
 /****************************************
    Standard Groups
 *****************************************/
-pompompurin, .pompompurin, .group-7, .group-8, .allowtagcolors .mgroup-7, .allowtagcolors .mgroup-8 { --mghue1: 2; --mgsat1: 59%; --mglight1: -5%; --mghue2: 45; --mgsat2: 65%; --mglight2: -5%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "pompompurin"; --mgbanner: url(https://img.nickpic.host/g1uKVm.jpg); }
+pompompurin, .pompompurin, .group-7, .group-8, .allowtagcolors .mgroup-7, .allowtagcolors .mgroup-8 { --mghue1: 2; --mgsat1: 59%; --mglight1: -5%; --mghue2: 45; --mgsat2: 65%; --mglight2: -5%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "pompompurin"; --mgbanner: url(https://img.nickpic.host/u2x3E2.jpg); }
 
-badtzmaru, .badtzmaru, .group-9, .group-10, .mgroup-9, .mgroup-10 { --mghue1: 49; --mgsat1: 70%; --mglight1: -5%; --mghue2: 290; --mgsat2: 50%; --mglight2: -10%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "badtz maru"; --mgbanner: url(https://img.nickpic.host/g1u8QO.jpg); }
+badtzmaru, .badtzmaru, .group-9, .group-10, .mgroup-9, .mgroup-10 { --mghue1: 45; --mgsat1: 70%; --mglight1: 0%; --mghue2: 265; --mgsat2: 50%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "badtz maru"; --mgbanner: url(https://img.nickpic.host/u2xEvD.jpg); }
 
-keroppi, .keroppi, .group-11, .group-12, .allowtagcolors .mgroup-11, .allowtagcolors .mgroup-12 { --mghue1: 111; --mgsat1: 59%; --mglight1: -2%; --mghue2: 350; --mgsat2: 70%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "keroppi"; --mgbanner: url(https://img.nickpic.host/g1uHo8.jpg); }
+keroppi, .keroppi, .group-11, .group-12, .allowtagcolors .mgroup-11, .allowtagcolors .mgroup-12 { --mghue1: 111; --mgsat1: 59%; --mglight1: -2%; --mghue2: 350; --mgsat2: 70%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "keroppi"; --mgbanner: url(https://img.nickpic.host/u2xU1e.jpg); }
 
-cinnamoroll, .cinnamoroll, .group-13, .group-14, .allowtagcolors .mgroup-13, .allowtagcolors .mgroup-14 { --mghue1: 158; --mgsat1: 59%; --mglight1: 0%; --mghue2: 308; --mgsat2: 59%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cinnamoroll"; --mgbanner: url(https://img.nickpic.host/g1uVzd.jpg); }
+cinnamoroll, .cinnamoroll, .group-13, .group-14, .allowtagcolors .mgroup-13, .allowtagcolors .mgroup-14 { --mghue1: 165; --mgsat1: 59%; --mglight1: 0%; --mghue2: 308; --mgsat2: 59%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "cinnamoroll"; --mgbanner: url(https://img.nickpic.host/u2xXLX.jpg); }
 
-aggretsuko, .aggretsuko, .group-15, .group-16, .allowtagcolors .mgroup-15, .allowtagcolors .mgroup-16 { --mghue1: 215; --mgsat1: 80%; --mglight1: 0%; --mghue2: 36; --mgsat2: 80%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "aggretsuko"; --mgbanner: url(https://img.nickpic.host/g1u255.jpg); }
+aggretsuko, .aggretsuko, .group-15, .group-16, .allowtagcolors .mgroup-15, .allowtagcolors .mgroup-16 { --mghue1: 215; --mgsat1: 80%; --mglight1: 0%; --mghue2: 36; --mgsat2: 80%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "aggretsuko"; --mgbanner: url(https://img.nickpic.host/u2x7cz.jpg); }
 
-kuromi, .kuromi, .group-17, .group-18, .allowtagcolors .mgroup-17, .allowtagcolors .mgroup-18 { --mghue1: 248; --mgsat1: 69%; --mglight1: 0%; --mghue2: 321; --mgsat2: 75%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "kuromi"; --mgbanner: url(https://img.nickpic.host/g1uekM.jpg); }
+kuromi, .kuromi, .group-17, .group-18, .allowtagcolors .mgroup-17, .allowtagcolors .mgroup-18 { --mghue1: 248; --mgsat1: 69%; --mglight1: 0%; --mghue2: 321; --mgsat2: 75%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "kuromi"; --mgbanner: url(https://img.nickpic.host/u2xpJ1.jpg); }
 
-mymelody, .mymelody, .group-19, .group-20, .allowtagcolors .mgroup-19, .allowtagcolors .mgroup-20 { --mghue1: 335; --mgsat1: 70%; --mglight1: 0%; --mghue2: 195; --mgsat2: 60%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "my melody"; --mgbanner: url(https://img.nickpic.host/g1uPVX.jpg); }
+mymelody, .mymelody, .group-19, .group-20, .allowtagcolors .mgroup-19, .allowtagcolors .mgroup-20 { --mghue1: 335; --mgsat1: 70%; --mglight1: 0%; --mghue2: 195; --mgsat2: 60%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "my melody"; --mgbanner: url(https://img.nickpic.host/u2x2hs.jpg); }
+
+pochacco, .pochacco, .group-37, .group-38, .allowtagcolors .mgroup-37, .allowtagcolors .mgroup-38 { --mghue1: 16; --mgsat1: 62%; --mglight1: 0%; --mghue2: 207; --mgsat2: 65%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "pochacco"; --mgbanner: url(https://img.nickpic.host/u2xd2q.jpg); }
 
 /****************************************
    Premium Groups
 *****************************************/
-gudetama, .gudetama, .group-21, .group-22, .allowtagcolors .mgroup-21, .allowtagcolors .mgroup-22 { --mghue1: 41; --mgsat1: 70%; --mglight1: -5%; --mghue2: 0; --mgsat2: 70%; --mglight2: 0%; --mghue3: 228; --mgsat3: 61%; --mglight3: -10%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "gudetama"; --mgbanner: url(https://img.nickpic.host/g1Ai3M.jpg); }
+gudetama, .gudetama, .group-21, .group-22, .allowtagcolors .mgroup-21, .allowtagcolors .mgroup-22 { --mghue1: 41; --mgsat1: 70%; --mglight1: -5%; --mghue2: 0; --mgsat2: 70%; --mglight2: 0%; --mghue3: 228; --mgsat3: 61%; --mglight3: -10%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "gudetama"; --mgbanner: url(https://img.nickpic.host/u2BIhD.jpg); }
 
-hummingmint, .hummingmint, .group-23, .group-24, .allowtagcolors .mgroup-23, .allowtagcolors .mgroup-24 { --mghue1: 35; --mgsat1: 60%; --mglight1: 2%; --mghue2: 14; --mgsat2: 60%; --mglight2: 0%; --mghue3: 174; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "hummingmint"; --mgbanner: url(https://img.nickpic.host/g1AHXz.jpg); }
+hummingmint, .hummingmint, .group-23, .group-24, .allowtagcolors .mgroup-23, .allowtagcolors .mgroup-24 { --mghue1: 35; --mgsat1: 60%; --mglight1: 2%; --mghue2: 14; --mgsat2: 60%; --mglight2: 0%; --mghue3: 174; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "hummingmint"; --mgbanner: url(https://img.nickpic.host/u2BpGP.jpg); }
 
-ichigoman, .ichigoman, .group-25, .group-26, .allowtagcolors .mgroup-25, .allowtagcolors .mgroup-26 { --mghue1: 144; --mgsat1: 48%; --mglight1: 0%; --mghue2: 49; --mgsat2: 75%; --mglight2: 0%; --mghue3: 338; --mgsat3: 80%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "ichigoman"; --mgbanner: url(https://img.nickpic.host/g1EnTs.jpg); }
+ichigoman, .ichigoman, .group-25, .group-26, .allowtagcolors .mgroup-25, .allowtagcolors .mgroup-26 { --mghue1: 144; --mgsat1: 48%; --mglight1: 0%; --mghue2: 49; --mgsat2: 75%; --mglight2: 0%; --mghue3: 338; --mgsat3: 80%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "ichigoman"; --mgbanner: url(https://img.nickpic.host/u2xM06.jpg); }
 
-wishmewell, .wishmewell, .group-27, .group-28, .allowtagcolors .mgroup-27, .allowtagcolors .mgroup-28 { --mghue1: 348; --mgsat1: 69%; --mglight1: 0%; --mghue2: 175; --mgsat2: 69%; --mglight2: 0%; --mghue3: 250; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "wish me well"; --mgbanner: url(https://img.nickpic.host/g1EMa2.jpg); }
+wishmewell, .wishmewell, .group-27, .group-28, .allowtagcolors .mgroup-27, .allowtagcolors .mgroup-28 { --mghue1: 348; --mgsat1: 69%; --mglight1: 0%; --mghue2: 175; --mgsat2: 69%; --mglight2: 0%; --mghue3: 250; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "wish me well"; --mgbanner: url(https://img.nickpic.host/u2xBUJ.jpg); }
 
 /****************************************
    Exclusive Groups
 *****************************************/
-masyumaro, .masyumaro, .group-29, .group-30, .allowtagcolors .mgroup-29, .allowtagcolors .mgroup-30 { --mghue1: 36; --mgsat1: 60%; --mglight1: 2%; --mghue2: 212; --mgsat2: 60%; --mglight2: 2%; --mghue3: 354; --mgsat3: 60%; --mglight3: 2%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "masyumaro"; --mgbanner: url(https://img.nickpic.host/g1ERnQ.jpg); }
+masyumaro, .masyumaro, .group-29, .group-30, .allowtagcolors .mgroup-29, .allowtagcolors .mgroup-30 { --mghue1: 36; --mgsat1: 60%; --mglight1: 2%; --mghue2: 212; --mgsat2: 60%; --mglight2: 2%; --mghue3: 354; --mgsat3: 60%; --mglight3: 2%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "masyumaro"; --mgbanner: url(https://img.nickpic.host/u2B32f.jpg); }
 
-chococat, .chococat, .group-31, .group-32, .allowtagcolors .mgroup-31, .allowtagcolors .mgroup-32 { --mghue1: 29; --mgsat1: 70%; --mglight1: 2%; --mghue2: 294; --mgsat2: 50%; --mglight2: 0%; --mghue3: 184; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "chococat"; --mgbanner: url(https://img.nickpic.host/g1E19x.jpg); }
+chococat, .chococat, .group-31, .group-32, .allowtagcolors .mgroup-31, .allowtagcolors .mgroup-32 { --mghue1: 29; --mgsat1: 70%; --mglight1: 2%; --mghue2: 294; --mgsat2: 50%; --mglight2: 0%; --mghue3: 184; --mgsat3: 69%; --mglight3: 0%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "chococat"; --mgbanner: url(https://img.nickpic.host/u2Bj6p.jpg); }
 
-hangyodon, .hangyodon, .group-33, .group-34, .allowtagcolors .mgroup-33, .allowtagcolors .mgroup-34 { --mghue1: 130; --mgsat1: 60%; --mglight1: -2%; --mghue2: 260; --mgsat2: 50%; --mglight2: 0%; --mghue3: 6; --mgsat3: 80%; --mglight3: 1%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "hangyodon"; --mgbanner: url(https://img.nickpic.host/q1xwxb.jpg); }
+hangyodon, .hangyodon, .group-33, .group-34, .allowtagcolors .mgroup-33, .allowtagcolors .mgroup-34 { --mghue1: 130; --mgsat1: 60%; --mglight1: -2%; --mghue2: 260; --mgsat2: 50%; --mglight2: 0%; --mghue3: 6; --mgsat3: 80%; --mglight3: 1%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "hangyodon"; --mgbanner: url(https://img.nickpic.host/u2BO9j.jpg); }
 
-paupipo, .paupipo, .group-35, .group-36, .allowtagcolors .mgroup-35, .allowtagcolors .mgroup-36 { --mghue1: 188; --mgsat1: 65%; --mglight1: 3%; --mghue2: 28; --mgsat2: 45%; --mglight2: 2%; --mghue3: 224; --mgsat3: 70%; --mglight3: 1%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "paupipo"; --mgbanner: url(https://img.nickpic.host/q1GxRX.jpg); }
+paupipo, .paupipo, .group-35, .group-36, .allowtagcolors .mgroup-35, .allowtagcolors .mgroup-36 { --mghue1: 188; --mgsat1: 65%; --mglight1: 3%; --mghue2: 28; --mgsat2: 45%; --mglight2: 2%; --mghue3: 224; --mgsat3: 70%; --mglight3: 1%; --mghue4: var(--mghue3); --mgsat4: var(--mgsat3); --mglight4: var(--mglight3); --groupname: "paupipo"; --mgbanner: url(https://img.nickpic.host/u2BC6n.jpg); }
+
+/****************************************
+   Seasonal Groups
+*****************************************/
+opal, .opal, .group-39, .group-40, .allowtagcolors .mgroup-39, .allowtagcolors .mgroup-40 { --mghue1: 193; --mgsat1: 65%; --mglight1: 0%; --mghue2: 264; --mgsat2: 65%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "opal"; --mgbanner: url(https://img.nickpic.host/u23Bo6.jpg); }
+
+rin, .rin, .group-41, .group-42, .allowtagcolors .mgroup-41, .allowtagcolors .mgroup-42 { --mghue1: 88; --mgsat1: 55%; --mglight1: 0%; --mghue2: 144; --mgsat2: 55%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "rin"; --mgbanner: url(https://img.nickpic.host/u2BRjO.jpg); }
+
+topaz, .topaz, .group-43, .group-44, .allowtagcolors .mgroup-43, .allowtagcolors .mgroup-44 { --mghue1: 285; --mgsat1: 60%; --mglight1: 0%; --mghue2: 3; --mgsat2: 60%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "topaz"; --mgbanner: url(https://img.nickpic.host/u2serm.jpg); }
+
+peridot, .peridot, .group-45, .group-46, .allowtagcolors .mgroup-45, .allowtagcolors .mgroup-46 { --mghue1: 35; --mgsat1: 55%; --mglight1: 0%; --mghue2: 74; --mgsat2: 55%; --mglight2: 0%; --mghue3: var(--mghue1); --mgsat3: var(--mgsat1); --mg3light: var(--mglight1); --mghue4: var(--mghue2); --mgsat4: var(--mgsat2); --mglight4: var(--mglight2); --groupname: "peridot"; --mgbanner: url(https://img.nickpic.host/u2BiqQ.jpg); }
+
 
 * {
 --fontaccent1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))); --fontaccent2: hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))); --fontaccent3: hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken))); --fontaccent4: hsl(var(--mghue4), calc(var(--mgsat4) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight4) + var(--darken)));
 }
-.group-1, .group-5, .group-6, .group-7, .group-8, .group-9, .group-10, .group-11, .group-12, .group-13, .group-14, .group-15, .group-16, .group-17, .group-18, .group-19, .group-20,
+.group-1, .group-5, .group-6, .group-7, .group-8, .group-9, .group-10, .group-11, .group-12, .group-13, .group-14, .group-15, .group-16, .group-17, .group-18, .group-19, .group-20, .group-37, .group-38, .group-39, .group-40, .group-41, .group-42, .group-43, .group-44, .group-45, .group-46,
 .membergrouphereinalllowercase,
-.retired, .inactive, .pompompurin, .badtzmaru, .keroppi, .cinnamoroll, .aggretsuko, .kuromi, .mymelody  {
+.retired, .inactive, .pompompurin, .badtzmaru, .keroppi, .cinnamoroll, .aggretsuko, .kuromi, .mymelody, .pochacco, .opal, .rin, .topaz, .peridot  {
 --pastelgradient1: hsl(var(--mghue1), calc(var(--mgsat1) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--pastelpercent)), calc(var(--lightness1) + var(--mglight2) + var(--darken)));
 --fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken)));
 }
@@ -129,4 +154,4 @@ paupipo, .paupipo, .group-35, .group-36, .allowtagcolors .mgroup-35, .allowtagco
 --fontgradient: hsl(var(--mghue1), calc(var(--mgsat1) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight1) + var(--darken))), hsl(var(--mghue2), calc(var(--mgsat2) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight2) + var(--darken))), hsl(var(--mghue3), calc(var(--mgsat3) + var(--normalpercent)), calc(var(--lightness2) + var(--mglight3) + var(--darken)));
 }
 
-.allowtagcolors a.user-tagged { background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); -webkit-box-decoration-break: clone; }
+.allowtagcolors a.user-tagged { background-image: linear-gradient(to right, var(--fontgradient)); -webkit-background-clip: text; -webkit-text-fill-color: rgba(var(--bgelev1), 0); }

@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url("https://use.typekit.net/jhi5swa.css");
+
+request7 {
+  display: block;
+  background: rgba(var(--bgelev1));
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  font: 400 14px filson-soft;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+  overflow: hidden;
+}
+request7 topper {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 25px;
+  font: 400 30px fugaz one;
+  line-height: 1;
+}
+request7 topper i {
+  color: var(--fontaccent1);
+}
+request7 topper span {
+  display: inline-block;
+  color: var(--fontaccent4);
+  border-bottom: 5px solid rgba(var(--font));
+}
+request7 midspace {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  background: rgba(var(--bgelev2));
+}
+request7 writingsur {
+  width: 100%;
+  padding: 50px;
+}
+request7 .writing {
+  padding: 15px;
+  background: rgba(var(--bgelev1));
+  border-radius: 10px;
+  text-align: justify;
+  line-height: 1.4;
+}
+request7 .writing overflow {
+  height: 300px;
+}
+request7 .writing p {
+  margin: 0;
+  margin-top: 15px;
+  text-indent: 10px;
+}
+request7 .writing p:first-child {
+  margin-top: 0;
+}
+request7 .writing b, request7 .writing i {
+  font-size: 15px;
+}
+request7 .writing b {
+  color: var(--fontaccent1);
+}
+request7 .writing i {
+  color: var(--fontaccent4);
+}
+request7 .writing u {
+  font: 400 15px fugaz one;
+  text-decoration: underline var(--fontaccent3);
+}
+request7 .writing a {
+  color: var(--fontaccent2);
+  text-decoration: underline;
+}
+request7 overview {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  place-content: center space-between;
+  align-items: stretch;
+}
+request7 overview:empty {
+  display: none;
+}
+request7 overview i {
+  flex-grow: 1;
+  margin: 3px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  background: rgba(var(--bgelev1));
+  text-align: center;
+  color: var(--fontaccent1);
+}
+request7 overview span {
+  margin: 3px;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 100%;
+  background-color: rgba(var(--bgelev1));
+}
+request7 gifspace {
+  width: 100%;
+  display: flex;
+  place-content: center center;
+  align-items: center;
+ background: rgba(var(--bgelev1)) linear-gradient(to bottom, var(--pastelgradient1)); background-blend-mode: var(--blendmode);
+}
+request7 gif {
+  display: block;
+  background: rgba(var(--bgelev1));
+  padding: 8px;
+  width: 106px;
+  height: 106px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(var(--shadow), .25);
+}
+request7 gif img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+request7 bottbar {
+  display: flex;
+  place-content: center space-between;
+  align-items: center;
+  padding: 25px;
+  font: 400 30px fugaz one;
+  line-height: 1;
+}
+request7 bottbar i {
+  color: var(--fontaccent1);
+}
+request7 bottbar span {
+  display: inline-block;
+  color: var(--fontaccent2);
+  border-bottom: 5px solid rgba(var(--font));
+}
